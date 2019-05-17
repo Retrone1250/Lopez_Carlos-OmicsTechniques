@@ -1,0 +1,55 @@
+---
+title: "**Exercise 1**"
+author: "Carlos López Elorduy"
+date: "5/15/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Introduction
+
+## Summary
+
+## Experimental design
+
+## Citations
+
+## Data description
+We have two files:
+
+  - The **targets** file
+  - The **expression matrix** file
+
+
+```{r}
+targets<-read.csv("targets.txt",header = T)
+expression<-read.delim("expression.txt")
+```
+
+```{r}
+show(targets)
+```
+
+```{r}
+dim(expression)
+summary(expression)
+```
+
+```{r}
+boxplot(expression)
+```
+
+```{r}
+boxplot(expression,col=c(2,2,3,3,4,4,5,5))
+```
+
+```{r}
+boxplot(expression,col=targets$Color)
+```
+
+
+
+
