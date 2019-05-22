@@ -10,12 +10,23 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ## Introduction
+**Title:** Gene expression profile of nickel-stimulated HUVEC.
+
+**Organism:** Homo sapiens.
+
+**Experiment type:** Expression profiling by array.
+
+**Status:** Public on Dec 31, 2006.
 
 ## Summary
+Nickel compounds, important carcinogens and prime inducers of contact allergy in humans, are potent activators of endothelial cells (ECs). To elucidate the signaling pathways mediating the cellular responses to nickel we performed Affymetrix gene profiling of human primary ECs.
+Keywords: stress response.
 
 ## Experimental design
+HUVEC cultured under standard conditions were treated for 5h with 1.5 mM NiCl2 or left untreated before total RNA isolation and processing for microarray hybridization. Four independent experiments were performed, i.e. 8 samples (Control and experiment) were analyzed.
 
 ## Citations
+    Viemann D, Schmidt M, Tenbrock K, Schmid S et al. The contact allergen nickel triggers a unique inflammatory and proangiogenic gene expression pattern via activation of NF-kappaB and hypoxia-inducible factor-1alpha. J Immunol 2007 Mar 1;178(5):3198-207. PMID: 17312168.
 
 ## Data description
 We have two files:
@@ -23,16 +34,17 @@ We have two files:
   - The **targets** file
   - The **expression matrix** file
 
-
 ```{r}
 targets<-read.csv("targets.txt",header = T)
 expression<-read.delim("expression.txt")
 ```
 
+### Targets
 ```{r}
 show(targets)
 ```
 
+### Expression matrix
 ```{r}
 dim(expression)
 summary(expression)
