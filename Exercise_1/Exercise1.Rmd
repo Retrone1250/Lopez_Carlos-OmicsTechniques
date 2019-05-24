@@ -51,11 +51,6 @@ dim(myExpress)
 summary(myExpress)
 ```
 
-```{r}
-boxplot(expression,col=targets$Color)
-```
-
-
 ## ExpressionSet creation
 
 The expression set will contain all the relevant information about our protein, starting by the expression matrix:
@@ -94,13 +89,4 @@ show(myEset)
 I can add also my contact info to the expression set:
 ```{r}
 myInfo=list(myName="Carlos Lopez Elorduy", myLab="Bioinformatics Lab",myContact="carlos.lopez@alum.esci.upf.edu", myTitle="Practical Exercise on ExpressionSets")
-```
-
-```{r}
-myDesc <- new("MIAME", name= myInfo[["myName"]],lab= myInfo[["myLab"]],contact= myInfo[["myContact"]] ,title=myInfo[["myTitle"]])
-```
-
-We update the expression set with the contact info:
-```{r}
-myEset <- ExpressionSet(assayData=myExpress,phenoData=myAnnotDF,fetureNames =myGenes,experimentData = myDesc)
 ```
