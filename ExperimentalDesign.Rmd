@@ -1,0 +1,27 @@
+---
+title: "ExperimentalDesign"
+author: "Carlos López Elorduy"
+date: "5/29/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Experimental Design
+
+## Design Matrix
+```{r}
+DesignM=matrix(c(1,0,1,0,1,0,1,0,
+                  0,1,0,1,0,1,0,1), nrow = 8, ncol = 2)
+DesignM
+```
+
+## Contrast Matrix
+```{r}
+ContrastM=matrix(c(1,-1),nrow = 1, ncol = 2)
+ContrastM
+```
+
+
