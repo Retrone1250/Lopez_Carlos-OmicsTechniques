@@ -1,0 +1,668 @@
+!Series_title	"Comparison between Saccharomyces cerevisiae HS 10, HS 34 and HS 12, HS 37 "
+!Series_geo_accession	"GSE12369"
+!Series_status	"Public on Dec 12 2008"
+!Series_submission_date	"Aug 07 2008"
+!Series_last_update_date	"Mar 20 2012"
+!Series_pubmed_id	"19072835"
+!Series_summary	"Gene expression of different flocculent (HS 10 and HS 34) and powdery (HS 12 and HS 37) yeast strains compared to each other during exponential and stationary growth phase was analysed."
+!Series_summary	"The isolation of RNA was done by disruption of the cells under liquid nitrogen using mortar and pistil and then the Qiagen RNeasy Midi Kit with some modifications within the manufacturers´ protocol and the Qiagen RNase-Free DNase Set were applied. "
+!Series_summary	"6 µg of the total RNA per sample was used for each microarray experiments. The indirect labelling by the tyramide-signal-amplification method (MicromaxTM TSATM labelling and detection Kit from Perkin Elmer life sciences) was used to increase the Cy3 and Cy5 signals of microarray detection. "
+!Series_summary	"Each cDNA containing Biotin- and Fluorescein-nucleotides respectively was purified with a QIAquick PCR purification kit and suspended in 11 µl of the formamide containing hybridization buffer. The slides were hybridized at 42°C over night under a cover slip."
+!Series_summary	"The microarrays were scanned by the Axon 4000B scanner; image intensity data were extracted and analysed with GenePix® Pro 6.0 software. "
+!Series_summary	"Data from different scans of Dye-swap experiment were extracted by GenePix Pro 6.0 software, normalized and united. An outliertest has been applied in order to find outliers amongst the gene replicats. Subsequently, a t-test (1% and 5% probability of error) has been used in order to find regulated genes. "
+!Series_summary	"Keywords: sorted yeast cells"
+!Series_overall_design	"Microarray experiments were realised with dye swap."
+!Series_type	"Expression profiling by array"
+!Series_contributor	"Franziska,,Heine"
+!Series_contributor	"Frank,,Stahl"
+!Series_contributor	"Heike,,Sträuber"
+!Series_contributor	"Claudia,,Wiacek"
+!Series_contributor	"Dirk,,Benndorf"
+!Series_contributor	"Cornelia,,Repenning"
+!Series_contributor	"Frank,,Schmidt"
+!Series_contributor	"Thomas,,Scheper"
+!Series_contributor	"Martin,,von Bergen"
+!Series_contributor	"Hauke,,Harms"
+!Series_contributor	"Susann,,Müller"
+!Series_sample_id	"GSM310494 GSM310495 GSM310496 GSM310497 GSM310499 GSM310500 GSM310501 GSM310502 GSM310503 GSM310504 "
+!Series_contact_name	"Franziska,,Heine"
+!Series_contact_email	"franziska.heine@ufz.de"
+!Series_contact_laboratory	"Flow Cytometry"
+!Series_contact_department	"Environmental Microbiology"
+!Series_contact_institute	"Helmholtz-Centre for Environmental Research - UFZ"
+!Series_contact_address	"Permoserstraße 15"
+!Series_contact_city	"Leipzig"
+!Series_contact_zip/postal_code	"04315"
+!Series_contact_country	"Germany"
+!Series_supplementary_file	"ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE12nnn/GSE12369/suppl/GSE12369_RAW.tar"
+!Series_platform_id	"GPL7145"
+!Series_platform_taxid	"4932"
+!Series_sample_taxid	"4932"
+!Series_relation	"BioProject: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA113201"
+
+!Sample_title	"Flocculent strain HS 10 exponential growth phase vs powdery strain HS 37 exponential growth phase"	"Flocculent strain HS 10 exponential growth phase vs powdery strain HS 37 exponential growth phase (Dye swap)"	"Flocculent strain HS 10 exponential growth phase vs powdery strain HS 12 exponential growth phase"	"Flocculent strain HS 10 exponential growth phase vs powdery strain HS 12 exponential growth phase (Dye swap)"	"Flocculent strain HS 34 exponential growth phase vs powdery strain HS 37 exponential growth phase"	"Flocculent strain HS 34 exponential growth phase vs powdery strain HS 37 exponential growth phase (Dye swap)"	"Flocculent strain HS 34 exponential growth phase vs powdery strain HS 12 exponential growth phase"	"Flocculent strain HS 34 exponential growth phase vs powdery strain HS 12 exponential growth phase (Dye swap)"	"Flocculent strain HS 10 stationary growth phase vs powdery strain HS 37 stationary growth phase"	"Flocculent strain HS 10 stationary growth phase vs powdery strain HS 37 stationary growth phase (Dye swap)"
+!Sample_geo_accession	"GSM310494"	"GSM310495"	"GSM310496"	"GSM310497"	"GSM310499"	"GSM310500"	"GSM310501"	"GSM310502"	"GSM310503"	"GSM310504"
+!Sample_status	"Public on Dec 12 2008"	"Public on Dec 12 2008"	"Public on Dec 12 2008"	"Public on Dec 12 2008"	"Public on Dec 12 2008"	"Public on Dec 12 2008"	"Public on Dec 12 2008"	"Public on Dec 12 2008"	"Public on Dec 12 2008"	"Public on Dec 12 2008"
+!Sample_submission_date	"Aug 07 2008"	"Aug 07 2008"	"Aug 07 2008"	"Aug 07 2008"	"Aug 07 2008"	"Aug 07 2008"	"Aug 07 2008"	"Aug 07 2008"	"Aug 07 2008"	"Aug 07 2008"
+!Sample_last_update_date	"Dec 12 2008"	"Dec 12 2008"	"Dec 12 2008"	"Dec 12 2008"	"Dec 12 2008"	"Dec 12 2008"	"Dec 12 2008"	"Dec 12 2008"	"Dec 12 2008"	"Dec 12 2008"
+!Sample_type	"RNA"	"RNA"	"RNA"	"RNA"	"RNA"	"RNA"	"RNA"	"RNA"	"RNA"	"RNA"
+!Sample_channel_count	"2"	"2"	"2"	"2"	"2"	"2"	"2"	"2"	"2"	"2"
+!Sample_source_name_ch1	"Cells from flocculent strain HS 10"	"Cells from powdery strain HS 37"	"Cells from flocculent strain HS 10"	"Cells from powdery strain HS 12"	"Cells from flocculent strain HS 34"	"Cells from powdery strain HS 37"	"Cells from powdery strain HS 12"	"Cells from flocculent strain HS 34"	"Cells from flocculent strain HS 10 stationary growth phase"	"Cells from powdery strain HS 37 stationary growth phase"
+!Sample_organism_ch1	"Saccharomyces cerevisiae"	"Saccharomyces cerevisiae"	"Saccharomyces cerevisiae"	"Saccharomyces cerevisiae"	"Saccharomyces cerevisiae"	"Saccharomyces cerevisiae"	"Saccharomyces cerevisiae"	"Saccharomyces cerevisiae"	"Saccharomyces cerevisiae"	"Saccharomyces cerevisiae"
+!Sample_characteristics_ch1	"Saccharomyces cerevisiae HS 10"	"Saccharomyces cerevisiae HS 37"	"Saccharomyces cerevisiae HS 10"	"Saccharomyces cerevisiae HS 12"	"Saccharomyces cerevisiae HS 34"	"Saccharomyces cerevisiae HS 37"	"Saccharomyces cerevisiae HS 12"	"Saccharomyces cerevisiae HS 34"	"Saccharomyces cerevisiae HS 10"	"Saccharomyces cerevisiae HS 37"
+!Sample_molecule_ch1	"total RNA"	"total RNA"	"total RNA"	"total RNA"	"total RNA"	"total RNA"	"total RNA"	"total RNA"	"total RNA"	"total RNA"
+!Sample_extract_protocol_ch1	"The isolation of RNA was done by disruption of the cells under liquid nitrogen using mortar and pistil and then the Qiagen RNeasy Midi Kit with some modifications within the manufacturers´ protocol and the Qiagen RNase-Free DNase Set were applied. "	"The isolation of RNA was done by disruption of the cells under liquid nitrogen using mortar and pistil and then the Qiagen RNeasy Midi Kit with some modifications within the manufacturers´ protocol and the Qiagen RNase-Free DNase Set were applied. "	"The isolation of RNA was done by disruption of the cells under liquid nitrogen using mortar and pistil and then the Qiagen RNeasy Midi Kit with some modifications within the manufacturers´ protocol and the Qiagen RNase-Free DNase Set were applied. "	"The isolation of RNA was done by disruption of the cells under liquid nitrogen using mortar and pistil and then the Qiagen RNeasy Midi Kit with some modifications within the manufacturers´ protocol and the Qiagen RNase-Free DNase Set were applied. "	"The isolation of RNA was done by disruption of the cells under liquid nitrogen using mortar and pistil and then the Qiagen RNeasy Midi Kit with some modifications within the manufacturers´ protocol and the Qiagen RNase-Free DNase Set were applied. "	"The isolation of RNA was done by disruption of the cells under liquid nitrogen using mortar and pistil and then the Qiagen RNeasy Midi Kit with some modifications within the manufacturers´ protocol and the Qiagen RNase-Free DNase Set were applied. "	"The isolation of RNA was done by disruption of the cells under liquid nitrogen using mortar and pistil and then the Qiagen RNeasy Midi Kit with some modifications within the manufacturers´ protocol and the Qiagen RNase-Free DNase Set were applied. "	"The isolation of RNA was done by disruption of the cells under liquid nitrogen using mortar and pistil and then the Qiagen RNeasy Midi Kit with some modifications within the manufacturers´ protocol and the Qiagen RNase-Free DNase Set were applied. "	"The isolation of RNA was done by disruption of the cells under liquid nitrogen using mortar and pistil and then the Qiagen RNeasy Midi Kit with some modifications within the manufacturers´ protocol and the Qiagen RNase-Free DNase Set were applied. "	"The isolation of RNA was done by disruption of the cells under liquid nitrogen using mortar and pistil and then the Qiagen RNeasy Midi Kit with some modifications within the manufacturers´ protocol and the Qiagen RNase-Free DNase Set were applied. "
+!Sample_label_ch1	"Cy5"	"Cy5"	"Cy5"	"Cy5"	"Cy5"	"Cy5"	"Cy5"	"Cy5"	"Cy5"	"Cy5"
+!Sample_label_protocol_ch1	"The indirect labelling by the tyramide-signal-amplification method (MicromaxTM TSATM labelling and detection Kit from Perkin Elmer life sciences, MPS 522) was used to increase the Cy3/Cy5 signals of microarray detection. "	"The indirect labelling by the tyramide-signal-amplification method (MicromaxTM TSATM labelling and detection Kit from Perkin Elmer life sciences, MPS 522) was used to increase the Cy3/Cy5 signals of microarray detection. "	"The indirect labelling by the tyramide-signal-amplification method (MicromaxTM TSATM labelling and detection Kit from Perkin Elmer life sciences, MPS 522) was used to increase the Cy3/Cy5 signals of microarray detection. "	"The indirect labelling by the tyramide-signal-amplification method (MicromaxTM TSATM labelling and detection Kit from Perkin Elmer life sciences, MPS 522) was used to increase the Cy3/Cy5 signals of microarray detection. "	"The indirect labelling by the tyramide-signal-amplification method (MicromaxTM TSATM labelling and detection Kit from Perkin Elmer life sciences, MPS 522) was used to increase the Cy3/Cy5 signals of microarray detection. "	"The indirect labelling by the tyramide-signal-amplification method (MicromaxTM TSATM labelling and detection Kit from Perkin Elmer life sciences, MPS 522) was used to increase the Cy3/Cy5 signals of microarray detection. "	"The indirect labelling by the tyramide-signal-amplification method (MicromaxTM TSATM labelling and detection Kit from Perkin Elmer life sciences, MPS 522) was used to increase the Cy3/Cy5 signals of microarray detection. "	"The indirect labelling by the tyramide-signal-amplification method (MicromaxTM TSATM labelling and detection Kit from Perkin Elmer life sciences, MPS 522) was used to increase the Cy3/Cy5 signals of microarray detection. "	"The indirect labelling by the tyramide-signal-amplification method (MicromaxTM TSATM labelling and detection Kit from Perkin Elmer life sciences, MPS 522) was used to increase the Cy3/Cy5 signals of microarray detection. "	"The indirect labelling by the tyramide-signal-amplification method (MicromaxTM TSATM labelling and detection Kit from Perkin Elmer life sciences, MPS 522) was used to increase the Cy3/Cy5 signals of microarray detection. "
+!Sample_label_protocol_ch1	"6 µg of the total RNA were reverse transcribed and thereby the cDNA was labelled with Fluorescein-dCTP/ Biotin-dCTP."	"6 µg of the total RNA were reverse transcribed and thereby the cDNA was labelled with Fluorescein-dCTP/ Biotin-dCTP."	"6 µg of the total RNA were reverse transcribed and thereby the cDNA was labelled with Fluorescein-dCTP/ Biotin-dCTP."	"6 µg of the total RNA were reverse transcribed and thereby the cDNA was labelled with Fluorescein-dCTP/ Biotin-dCTP."	"6 µg of the total RNA were reverse transcribed and thereby the cDNA was labelled with Fluorescein-dCTP/ Biotin-dCTP."	"6 µg of the total RNA were reverse transcribed and thereby the cDNA was labelled with Fluorescein-dCTP/ Biotin-dCTP."	"6 µg of the total RNA were reverse transcribed and thereby the cDNA was labelled with Fluorescein-dCTP/ Biotin-dCTP."	"6 µg of the total RNA were reverse transcribed and thereby the cDNA was labelled with Fluorescein-dCTP/ Biotin-dCTP."	"6 µg of the total RNA were reverse transcribed and thereby the cDNA was labelled with Fluorescein-dCTP/ Biotin-dCTP."	"6 µg of the total RNA were reverse transcribed and thereby the cDNA was labelled with Fluorescein-dCTP/ Biotin-dCTP."
+!Sample_taxid_ch1	"4932"	"4932"	"4932"	"4932"	"4932"	"4932"	"4932"	"4932"	"4932"	"4932"
+!Sample_source_name_ch2	"Cells from powdery strain HS 37"	"Cells from flocculent strain HS 10"	"Cells from powdery strain HS 12"	"Cells from flocculent strain HS 10"	"Cells from powdery strain HS 37"	"Cells from flocculent strain HS 34"	"Cells from flocculent strain HS 34"	"Cells from powdery strain HS 12"	"Cells from powdery strain HS 37 stationary growth phase"	"Cells from flocculent strain HS 10 stationary growth phase"
+!Sample_organism_ch2	"Saccharomyces cerevisiae"	"Saccharomyces cerevisiae"	"Saccharomyces cerevisiae"	"Saccharomyces cerevisiae"	"Saccharomyces cerevisiae"	"Saccharomyces cerevisiae"	"Saccharomyces cerevisiae"	"Saccharomyces cerevisiae"	"Saccharomyces cerevisiae"	"Saccharomyces cerevisiae"
+!Sample_characteristics_ch2	"Saccharomyces cerevisiae HS 37"	"Saccharomyces cerevisiae HS 10"	"Saccharomyces cerevisiae HS 12"	"Saccharomyces cerevisiae HS 10"	"Saccharomyces cerevisiae HS 37"	"Saccharomyces cerevisiae HS 34"	"Saccharomyces cerevisiae HS 34"	"Saccharomyces cerevisiae HS 12"	"Saccharomyces cerevisiae HS 37"	"Saccharomyces cerevisiae HS 10"
+!Sample_molecule_ch2	"total RNA"	"total RNA"	"total RNA"	"total RNA"	"total RNA"	"total RNA"	"total RNA"	"total RNA"	"total RNA"	"total RNA"
+!Sample_extract_protocol_ch2	"The isolation of RNA was done by disruption of the cells under liquid nitrogen using mortar and pistil and then the Qiagen RNeasy Midi Kit with some modifications within the manufacturers´ protocol and the Qiagen RNase-Free DNase Set were applied. "	"The isolation of RNA was done by disruption of the cells under liquid nitrogen using mortar and pistil and then the Qiagen RNeasy Midi Kit with some modifications within the manufacturers´ protocol and the Qiagen RNase-Free DNase Set were applied. "	"The isolation of RNA was done by disruption of the cells under liquid nitrogen using mortar and pistil and then the Qiagen RNeasy Midi Kit with some modifications within the manufacturers´ protocol and the Qiagen RNase-Free DNase Set were applied. "	"The isolation of RNA was done by disruption of the cells under liquid nitrogen using mortar and pistil and then the Qiagen RNeasy Midi Kit with some modifications within the manufacturers´ protocol and the Qiagen RNase-Free DNase Set were applied. "	"The isolation of RNA was done by disruption of the cells under liquid nitrogen using mortar and pistil and then the Qiagen RNeasy Midi Kit with some modifications within the manufacturers´ protocol and the Qiagen RNase-Free DNase Set were applied. "	"The isolation of RNA was done by disruption of the cells under liquid nitrogen using mortar and pistil and then the Qiagen RNeasy Midi Kit with some modifications within the manufacturers´ protocol and the Qiagen RNase-Free DNase Set were applied. "	"The isolation of RNA was done by disruption of the cells under liquid nitrogen using mortar and pistil and then the Qiagen RNeasy Midi Kit with some modifications within the manufacturers´ protocol and the Qiagen RNase-Free DNase Set were applied. "	"The isolation of RNA was done by disruption of the cells under liquid nitrogen using mortar and pistil and then the Qiagen RNeasy Midi Kit with some modifications within the manufacturers´ protocol and the Qiagen RNase-Free DNase Set were applied. "	"The isolation of RNA was done by disruption of the cells under liquid nitrogen using mortar and pistil and then the Qiagen RNeasy Midi Kit with some modifications within the manufacturers´ protocol and the Qiagen RNase-Free DNase Set were applied. "	"The isolation of RNA was done by disruption of the cells under liquid nitrogen using mortar and pistil and then the Qiagen RNeasy Midi Kit with some modifications within the manufacturers´ protocol and the Qiagen RNase-Free DNase Set were applied. "
+!Sample_label_ch2	"Cy3"	"Cy3"	"Cy3"	"Cy3"	"Cy3"	"Cy3"	"Cy3"	"Cy3"	"Cy3"	"Cy3"
+!Sample_label_protocol_ch2	"The indirect labelling by the tyramide-signal-amplification method (MicromaxTM TSATM labelling and detection Kit from Perkin Elmer life sciences, MPS 522) was used to increase the Cy5 signals of microarray detection. 6 µg of the total RNA were reverse transcribed and thereby the cDNA was labelled with Biotin-dCTP/ Fluorescein-dCTP."	"The indirect labelling by the tyramide-signal-amplification method (MicromaxTM TSATM labelling and detection Kit from Perkin Elmer life sciences, MPS 522) was used to increase the Cy5 signals of microarray detection. 6 µg of the total RNA were reverse transcribed and thereby the cDNA was labelled with Biotin-dCTP/ Fluorescein-dCTP."	"The indirect labelling by the tyramide-signal-amplification method (MicromaxTM TSATM labelling and detection Kit from Perkin Elmer life sciences, MPS 522) was used to increase the Cy5 signals of microarray detection. 6 µg of the total RNA were reverse transcribed and thereby the cDNA was labelled with Biotin-dCTP/ Fluorescein-dCTP."	"The indirect labelling by the tyramide-signal-amplification method (MicromaxTM TSATM labelling and detection Kit from Perkin Elmer life sciences, MPS 522) was used to increase the Cy5 signals of microarray detection. 6 µg of the total RNA were reverse transcribed and thereby the cDNA was labelled with Biotin-dCTP/ Fluorescein-dCTP."	"The indirect labelling by the tyramide-signal-amplification method (MicromaxTM TSATM labelling and detection Kit from Perkin Elmer life sciences, MPS 522) was used to increase the Cy5 signals of microarray detection. 6 µg of the total RNA were reverse transcribed and thereby the cDNA was labelled with Biotin-dCTP/ Fluorescein-dCTP."	"The indirect labelling by the tyramide-signal-amplification method (MicromaxTM TSATM labelling and detection Kit from Perkin Elmer life sciences, MPS 522) was used to increase the Cy5 signals of microarray detection. 6 µg of the total RNA were reverse transcribed and thereby the cDNA was labelled with Biotin-dCTP/ Fluorescein-dCTP."	"The indirect labelling by the tyramide-signal-amplification method (MicromaxTM TSATM labelling and detection Kit from Perkin Elmer life sciences, MPS 522) was used to increase the Cy5 signals of microarray detection. 6 µg of the total RNA were reverse transcribed and thereby the cDNA was labelled with Biotin-dCTP/ Fluorescein-dCTP."	"The indirect labelling by the tyramide-signal-amplification method (MicromaxTM TSATM labelling and detection Kit from Perkin Elmer life sciences, MPS 522) was used to increase the Cy5 signals of microarray detection. 6 µg of the total RNA were reverse transcribed and thereby the cDNA was labelled with Biotin-dCTP/ Fluorescein-dCTP."	"The indirect labelling by the tyramide-signal-amplification method (MicromaxTM TSATM labelling and detection Kit from Perkin Elmer life sciences, MPS 522) was used to increase the Cy5 signals of microarray detection. 6 µg of the total RNA were reverse transcribed and thereby the cDNA was labelled with Biotin-dCTP/ Fluorescein-dCTP."	"The indirect labelling by the tyramide-signal-amplification method (MicromaxTM TSATM labelling and detection Kit from Perkin Elmer life sciences, MPS 522) was used to increase the Cy5 signals of microarray detection. 6 µg of the total RNA were reverse transcribed and thereby the cDNA was labelled with Biotin-dCTP/ Fluorescein-dCTP."
+!Sample_taxid_ch2	"4932"	"4932"	"4932"	"4932"	"4932"	"4932"	"4932"	"4932"	"4932"	"4932"
+!Sample_hyb_protocol	"The differently labelled cDNAs (Fluorescein and Biotin) of both samples are hybridized (42°C over night) simultaneously in one experiment to the same array according to the slide manufacturer´s and Micromax TSA Kit recommendations."	"The differently labelled cDNAs (Fluorescein and Biotin) of both samples are hybridized (42°C over night) simultaneously in one experiment to the same array according to the slide manufacturer´s and Micromax TSA Kit recommendations."	"The differently labelled cDNAs (Fluorescein and Biotin) of both samples are hybridized (42°C over night) simultaneously in one experiment to the same array according to the slide manufacturer´s and Micromax TSA Kit recommendations."	"The differently labelled cDNAs (Fluorescein and Biotin) of both samples are hybridized (42°C over night) simultaneously in one experiment to the same array according to the slide manufacturer´s and Micromax TSA Kit recommendations."	"The differently labelled cDNAs (Fluorescein and Biotin) of both samples are hybridized (42°C over night) simultaneously in one experiment to the same array according to the slide manufacturer´s and Micromax TSA Kit recommendations."	"The differently labelled cDNAs (Fluorescein and Biotin) of both samples are hybridized (42°C over night) simultaneously in one experiment to the same array according to the slide manufacturer´s and Micromax TSA Kit recommendations."	"The differently labelled cDNAs (Fluorescein and Biotin) of both samples are hybridized (42°C over night) simultaneously in one experiment to the same array according to the slide manufacturer´s and Micromax TSA Kit recommendations."	"The differently labelled cDNAs (Fluorescein and Biotin) of both samples are hybridized (42°C over night) simultaneously in one experiment to the same array according to the slide manufacturer´s and Micromax TSA Kit recommendations."	"The differently labelled cDNAs (Fluorescein and Biotin) of both samples are hybridized (42°C over night) simultaneously in one experiment to the same array according to the slide manufacturer´s and Micromax TSA Kit recommendations."	"The differently labelled cDNAs (Fluorescein and Biotin) of both samples are hybridized (42°C over night) simultaneously in one experiment to the same array according to the slide manufacturer´s and Micromax TSA Kit recommendations."
+!Sample_scan_protocol	"The microarrays were scanned by the Axon 4000B scanner; image intensity data were extracted and analysed with GenePix® Pro 6.0 software. "	"The microarrays were scanned by the Axon 4000B scanner; image intensity data were extracted and analysed with GenePix® Pro 6.0 software. "	"The microarrays were scanned by the Axon 4000B scanner; image intensity data were extracted and analysed with GenePix® Pro 6.0 software. "	"The microarrays were scanned by the Axon 4000B scanner; image intensity data were extracted and analysed with GenePix® Pro 6.0 software. "	"The microarrays were scanned by the Axon 4000B scanner; image intensity data were extracted and analysed with GenePix® Pro 6.0 software. "	"The microarrays were scanned by the Axon 4000B scanner; image intensity data were extracted and analysed with GenePix® Pro 6.0 software. "	"The microarrays were scanned by the Axon 4000B scanner; image intensity data were extracted and analysed with GenePix® Pro 6.0 software. "	"The microarrays were scanned by the Axon 4000B scanner; image intensity data were extracted and analysed with GenePix® Pro 6.0 software. "	"The microarrays were scanned by the Axon 4000B scanner; image intensity data were extracted and analysed with GenePix® Pro 6.0 software. "	"The microarrays were scanned by the Axon 4000B scanner; image intensity data were extracted and analysed with GenePix® Pro 6.0 software. "
+!Sample_description	"Gene expression of cells of the flocculent strain HS 10 and the powdery strain HS 37 both harvested during exponential growth phase was analysed."	"Gene expression of cells of the flocculent strain HS 10 and the powdery strain HS 37 both harvested during exponential growth phase was analysed."	"Gene expression of cells of the flocculent strain HS 10 and the powdery strain HS 37 both harvested during exponential growth phase was analysed."	"Gene expression of cells of the flocculent strain HS 10 and the powdery strain HS 37 both harvested during exponential growth phase was analysed."	"Gene expression of cells of the flocculent strain HS 10 and the powdery strain HS 37 both harvested during exponential growth phase was analysed."	"Gene expression of cells of the flocculent strain HS 10 and the powdery strain HS 37 both harvested during exponential growth phase was analysed."	"Gene expression of cells of the flocculent strain HS 10 and the powdery strain HS 37 both harvested during exponential growth phase was analysed."	"Gene expression of cells of the flocculent strain HS 10 and the powdery strain HS 37 both harvested during exponential growth phase was analysed."	"Gene expression of cells of the flocculent strain HS 10 and the powdery strain HS 37 both harvested during exponential growth phase was analysed."	"Gene expression of cells of the flocculent strain HS 10 and the powdery strain HS 37 both harvested during exponential growth phase was analysed."
+!Sample_data_processing	"Processed Data: Data from different scans of Dye-swap experiment were extracted by GenePix Pro 6.0 software, normalized and united. An outliertest has been applied in order to find outliers amongst the gene replicats. Subsequently, a t-test (1% and 5% probability of error) has been used in order to find regulated genes."	"Processed Data: Data from different scans of Dye-swap experiment were extracted by GenePix Pro 6.0 software, normalized and united. An outliertest has been applied in order to find outliers amongst the gene replicats. Subsequently, a t-test (1% and 5% probability of error) has been used in order to find regulated genes."	"Processed Data: Data from different scans of Dye-swap experiment were extracted by GenePix Pro 6.0 software, normalized and united. An outliertest has been applied in order to find outliers amongst the gene replicats. Subsequently, a t-test (1% and 5% probability of error) has been used in order to find regulated genes."	"Processed Data: Data from different scans of Dye-swap experiment were extracted by GenePix Pro 6.0 software, normalized and united. An outliertest has been applied in order to find outliers amongst the gene replicats. Subsequently, a t-test (1% and 5% probability of error) has been used in order to find regulated genes."	"Processed Data: Data from different scans of Dye-swap experiment were extracted by GenePix Pro 6.0 software, normalized and united. An outliertest has been applied in order to find outliers amongst the gene replicats. Subsequently, a t-test (1% and 5% probability of error) has been used in order to find regulated genes."	"Processed Data: Data from different scans of Dye-swap experiment were extracted by GenePix Pro 6.0 software, normalized and united. An outliertest has been applied in order to find outliers amongst the gene replicats. Subsequently, a t-test (1% and 5% probability of error) has been used in order to find regulated genes."	"Processed Data: Data from different scans of Dye-swap experiment were extracted by GenePix Pro 6.0 software, normalized and united. An outliertest has been applied in order to find outliers amongst the gene replicats. Subsequently, a t-test (1% and 5% probability of error) has been used in order to find regulated genes."	"Processed Data: Data from different scans of Dye-swap experiment were extracted by GenePix Pro 6.0 software, normalized and united. An outliertest has been applied in order to find outliers amongst the gene replicats. Subsequently, a t-test (1% and 5% probability of error) has been used in order to find regulated genes."	"Processed Data: Data from different scans of Dye-swap experiment were extracted by GenePix Pro 6.0 software, normalized and united. An outliertest has been applied in order to find outliers amongst the gene replicats. Subsequently, a t-test (1% and 5% probability of error) has been used in order to find regulated genes."	"Processed Data: Data from different scans of Dye-swap experiment were extracted by GenePix Pro 6.0 software, normalized and united. An outliertest has been applied in order to find outliers amongst the gene replicats. Subsequently, a t-test (1% and 5% probability of error) has been used in order to find regulated genes."
+!Sample_platform_id	"GPL7145"	"GPL7145"	"GPL7145"	"GPL7145"	"GPL7145"	"GPL7145"	"GPL7145"	"GPL7145"	"GPL7145"	"GPL7145"
+!Sample_contact_name	"Franziska,,Heine"	"Franziska,,Heine"	"Franziska,,Heine"	"Franziska,,Heine"	"Franziska,,Heine"	"Franziska,,Heine"	"Franziska,,Heine"	"Franziska,,Heine"	"Franziska,,Heine"	"Franziska,,Heine"
+!Sample_contact_email	"franziska.heine@ufz.de"	"franziska.heine@ufz.de"	"franziska.heine@ufz.de"	"franziska.heine@ufz.de"	"franziska.heine@ufz.de"	"franziska.heine@ufz.de"	"franziska.heine@ufz.de"	"franziska.heine@ufz.de"	"franziska.heine@ufz.de"	"franziska.heine@ufz.de"
+!Sample_contact_laboratory	"Flow Cytometry"	"Flow Cytometry"	"Flow Cytometry"	"Flow Cytometry"	"Flow Cytometry"	"Flow Cytometry"	"Flow Cytometry"	"Flow Cytometry"	"Flow Cytometry"	"Flow Cytometry"
+!Sample_contact_department	"Environmental Microbiology"	"Environmental Microbiology"	"Environmental Microbiology"	"Environmental Microbiology"	"Environmental Microbiology"	"Environmental Microbiology"	"Environmental Microbiology"	"Environmental Microbiology"	"Environmental Microbiology"	"Environmental Microbiology"
+!Sample_contact_institute	"Helmholtz-Centre for Environmental Research - UFZ"	"Helmholtz-Centre for Environmental Research - UFZ"	"Helmholtz-Centre for Environmental Research - UFZ"	"Helmholtz-Centre for Environmental Research - UFZ"	"Helmholtz-Centre for Environmental Research - UFZ"	"Helmholtz-Centre for Environmental Research - UFZ"	"Helmholtz-Centre for Environmental Research - UFZ"	"Helmholtz-Centre for Environmental Research - UFZ"	"Helmholtz-Centre for Environmental Research - UFZ"	"Helmholtz-Centre for Environmental Research - UFZ"
+!Sample_contact_address	"Permoserstraße 15"	"Permoserstraße 15"	"Permoserstraße 15"	"Permoserstraße 15"	"Permoserstraße 15"	"Permoserstraße 15"	"Permoserstraße 15"	"Permoserstraße 15"	"Permoserstraße 15"	"Permoserstraße 15"
+!Sample_contact_city	"Leipzig"	"Leipzig"	"Leipzig"	"Leipzig"	"Leipzig"	"Leipzig"	"Leipzig"	"Leipzig"	"Leipzig"	"Leipzig"
+!Sample_contact_zip/postal_code	"04315"	"04315"	"04315"	"04315"	"04315"	"04315"	"04315"	"04315"	"04315"	"04315"
+!Sample_contact_country	"Germany"	"Germany"	"Germany"	"Germany"	"Germany"	"Germany"	"Germany"	"Germany"	"Germany"	"Germany"
+!Sample_supplementary_file	"ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM310nnn/GSM310494/suppl/GSM310494_100_10B-37F-650-650.gpr.gz"	"ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM310nnn/GSM310495/suppl/GSM310495_100_10F-37B-650-600.gpr.gz"	"ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM310nnn/GSM310496/suppl/GSM310496_100_10B-12F-580-660.gpr.gz"	"ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM310nnn/GSM310497/suppl/GSM310497_100_10F-12B-580-660.gpr.gz"	"ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM310nnn/GSM310499/suppl/GSM310499_100_34B_650-650.gpr.gz"	"ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM310nnn/GSM310500/suppl/GSM310500_100_34F_650-650.gpr.gz"	"ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM310nnn/GSM310501/suppl/GSM310501_100_12B_650.gpr.gz"	"ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM310nnn/GSM310502/suppl/GSM310502_100_12F_550-580.gpr.gz"	"ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM310nnn/GSM310503/suppl/GSM310503_100_10B-37F-650-650.gpr.gz"	"ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM310nnn/GSM310504/suppl/GSM310504_100_10F-37B-600-600.gpr.gz"
+!Sample_supplementary_file	"ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM310nnn/GSM310494/suppl/GSM310494_100_10B-37F-700-700.gpr.gz"	"ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM310nnn/GSM310495/suppl/GSM310495_100_10F-37B-700-650.gpr.gz"	"ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM310nnn/GSM310496/suppl/GSM310496_100_10B-12F-680-760.gpr.gz"	"ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM310nnn/GSM310497/suppl/GSM310497_100_10F-12B-700-700.gpr.gz"	"ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM310nnn/GSM310499/suppl/GSM310499_100_34B_700-700.gpr.gz"	"ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM310nnn/GSM310500/suppl/GSM310500_100_34F_700-700.gpr.gz"	"ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM310nnn/GSM310501/suppl/GSM310501_100_12B_700.gpr.gz"	"ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM310nnn/GSM310502/suppl/GSM310502_100_12F_700-700.gpr.gz"	"ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM310nnn/GSM310503/suppl/GSM310503_100_10B-37F-700-700.gpr.gz"	"ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM310nnn/GSM310504/suppl/GSM310504_100_10F-37B-650-650.gpr.gz"
+!Sample_supplementary_file	"ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM310nnn/GSM310494/suppl/GSM310494_10_10B-37F-650-650.gpr.gz"	"ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM310nnn/GSM310495/suppl/GSM310495_10_10F-37B-650-600.gpr.gz"	"ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM310nnn/GSM310496/suppl/GSM310496_10_10B-12F-580-660.gpr.gz"	"ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM310nnn/GSM310497/suppl/GSM310497_10_10F-12B-630-660.gpr.gz"	"ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM310nnn/GSM310499/suppl/GSM310499_10_34B_650-650.gpr.gz"	"ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM310nnn/GSM310500/suppl/GSM310500_10_34F_650-650.gpr.gz"	"ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM310nnn/GSM310501/suppl/GSM310501_10_12B_650.gpr.gz"	"ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM310nnn/GSM310502/suppl/GSM310502_100_12F_700-780.gpr.gz"	"ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM310nnn/GSM310503/suppl/GSM310503_100_10B-37F-750-750.gpr.gz"	"ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM310nnn/GSM310504/suppl/GSM310504_10_10F-37B-600-600.gpr.gz"
+!Sample_supplementary_file	"ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM310nnn/GSM310494/suppl/GSM310494_10_10B-37F-700-700.gpr.gz"	"ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM310nnn/GSM310495/suppl/GSM310495_10_10F-37B-700-650.gpr.gz"	"ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM310nnn/GSM310496/suppl/GSM310496_10_10B-12F-680-760.gpr.gz"	"ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM310nnn/GSM310497/suppl/GSM310497_10_10F-12B-700-700.gpr.gz"	"ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM310nnn/GSM310499/suppl/GSM310499_10_34B_700-700.gpr.gz"	"ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM310nnn/GSM310500/suppl/GSM310500_10_34F_700-700.gpr.gz"	"ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM310nnn/GSM310501/suppl/GSM310501_33_12B_650.gpr.gz"	"ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM310nnn/GSM310502/suppl/GSM310502_33_12F_600-680.gpr.gz"	"ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM310nnn/GSM310503/suppl/GSM310503_100_10B-37F-800-800.gpr.gz"	"ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM310nnn/GSM310504/suppl/GSM310504_10_10F-37B-650-650.gpr.gz"
+!Sample_supplementary_file	"ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM310nnn/GSM310494/suppl/GSM310494_33_10B-37F-650-650.gpr.gz"	"ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM310nnn/GSM310495/suppl/GSM310495_33_10F-37B-650-600.gpr.gz"	"ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM310nnn/GSM310496/suppl/GSM310496_33_10B-12F-580-660.gpr.gz"	"ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM310nnn/GSM310497/suppl/GSM310497_33_10F-12B-580-660.gpr.gz"	"ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM310nnn/GSM310499/suppl/GSM310499_33_34B_650-650.gpr.gz"	"ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM310nnn/GSM310500/suppl/GSM310500_33_34F_650-650.gpr.gz"	"ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM310nnn/GSM310501/suppl/GSM310501_33_12b_700.gpr.gz"	"ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM310nnn/GSM310502/suppl/GSM310502_33_12F_700-780.gpr.gz"	"ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM310nnn/GSM310503/suppl/GSM310503_10_10B-37F-650-650.gpr.gz"	"ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM310nnn/GSM310504/suppl/GSM310504_10_10F-37B-700-700.gpr.gz"
+!Sample_supplementary_file	"ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM310nnn/GSM310494/suppl/GSM310494_33_10B-37F-700-700.gpr.gz"	"ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM310nnn/GSM310495/suppl/GSM310495_33_10F-37B-700-650.gpr.gz"	"ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM310nnn/GSM310496/suppl/GSM310496_33_10B-12F-680-760.gpr.gz"	"ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM310nnn/GSM310497/suppl/GSM310497_33_10F-12B-700-700.gpr.gz"	"ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM310nnn/GSM310499/suppl/GSM310499_33_34B_700-700.gpr.gz"	"ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM310nnn/GSM310500/suppl/GSM310500_33_34F_700-700.gpr.gz"	""	""	"ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM310nnn/GSM310503/suppl/GSM310503_10_10B-37F-700-700.gpr.gz"	"ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM310nnn/GSM310504/suppl/GSM310504_33_10F-37B-600-600.gpr.gz"
+!Sample_supplementary_file	""	""	""	""	""	""	""	""	"ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM310nnn/GSM310503/suppl/GSM310503_33_10B-37F-650-650.gpr.gz"	"ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM310nnn/GSM310504/suppl/GSM310504_33_10F-37B-650-650.gpr.gz"
+!Sample_supplementary_file	""	""	""	""	""	""	""	""	"ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM310nnn/GSM310503/suppl/GSM310503_33_10B-37F-700-700.gpr.gz"	"ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM310nnn/GSM310504/suppl/GSM310504_33_10F-37B-700-700.gpr.gz"
+!Sample_data_row_count	"576"	"576"	"576"	"576"	"576"	"576"	"576"	"576"	"576"	"576"
+!series_matrix_table_begin
+"ID_REF"	"GSM310494"	"GSM310495"	"GSM310496"	"GSM310497"	"GSM310499"	"GSM310500"	"GSM310501"	"GSM310502"	"GSM310503"	"GSM310504"
+1										
+2										
+3										
+4										
+5										
+6										
+7										
+8										
+9										
+10	5.3	-0.6	6.3	-3.2	4.1	-3.5	-2.0	6.6	1.9	-2.6
+11	-0.9	-1.4	1.0	-1.0	-0.2	-0.2	-1.3	-1.1	-1.6	-2.0
+12	1.2	0.5	0.2	-1.1	0.2	0.6	0.3	-0.9	-0.1	-0.9
+13										
+14										
+15	-2.4	-1.4	-0.1	-0.9	-1.3		-0.1	-1.5		-2.1
+16	-0.5	-2.4	0.2	-1.8	-1.7	1.4	1.7	-1.0		-1.1
+17	-1.3	-1.5	0.3	-1.1	-3.1		-2.4	-0.8	-1.3	-1.5
+18	-0.3	-2.0	1.3	-0.7	-1.8	-2.0	-1.7	-1.5		-3.1
+19	-0.9	-2.1	-1.2	-1.0		-1.2	-2.1	-0.7	-0.9	-2.0
+20										
+21	-0.9	-2.2	-3.1	-3.2		-1.8	-1.8	-0.7		-3.3
+22	-1.3	-0.6	-1.6	-0.6			0.8	-2.1	-0.6	-1.9
+23	-2.6	-1.9	-2.0	-2.3	-0.7		-1.7	-1.3	-2.1	-2.1
+24	0.3	-1.1	0.5	-1.8	1.0	0.1	-0.7	-0.7	-0.5	-2.0
+25	1.4	-0.8	0.9	-1.0	1.3		0.0	-0.6	-1.7	-2.4
+26	1.0	-0.2	0.2	-0.6			0.1	0.4		-2.7
+27	-0.4	-1.1	0.2	-0.2	1.1		-1.1	-1.0	-3.1	-1.9
+28	0.5	-0.2	0.1	-0.3	0.0		0.5	-1.1	-0.9	-1.9
+29	0.1	-1.6	0.8	-0.6	-0.9		-0.1	-0.7	-2.1	-1.7
+30	-0.9	-0.9	1.1	-1.3	-1.8		-0.5	-0.1		-2.7
+31	-0.3	-1.8	0.1	-0.8	-0.1		-1.0	-1.6	-2.0	-2.4
+32	-0.8	-1.7	-2.3	-0.7				-0.3		-3.2
+33	-0.8	-1.5	-0.8	-2.2			-0.1	-0.4		-2.8
+34	-1.1	-1.8	-0.3	-1.0				-0.7	-2.6	-2.6
+35	0.4	-0.9	-0.9	-0.5	0.8		1.0	-1.4	-1.0	-1.4
+36	-1.1	-1.2	0.1	-1.8	-5.2			0.8	-3.1	-5.0
+37	-0.9	-2.0	0.0	-0.9				-0.5	-1.7	-2.2
+38	-0.9	-1.7	-0.6	-0.9	-0.1	-1.5	-0.7	-0.6	-1.9	-2.4
+39	-1.2	-1.8	-4.4	-2.2				-0.1	-2.8	-3.0
+40	-0.6	-0.5	0.2	-1.5	-0.8		0.1	-1.0	-1.1	-1.6
+41	-1.4	-1.4	-2.2	-1.6		-1.1		-0.7		-3.4
+42	-0.6	-1.8	-1.3	-0.5			-0.7	0.4		-3.0
+43	-1.2	-1.2	0.6	-1.3	-0.9		-0.7	-1.5		-3.1
+44		-2.1	-3.4	-3.1			-1.8	-0.3		-4.0
+45	-1.9	-1.4	-2.1	-1.1				-0.1	-3.2	-2.9
+46	-0.9	-0.9	0.2	-2.0	0.2		-0.8	0.9		-3.4
+47	-1.9	-1.6	-1.6	-1.9				-0.6	-1.9	-4.0
+48	-0.7	-1.5	-0.5	-1.8	-1.7			-0.5	-3.1	-3.9
+49										
+50										
+51										
+52										
+53										
+54										
+55										
+56										
+57										
+58	-1.6	-0.3	0.2	-1.1	0.5		1.0	-2.0	-2.3	-1.0
+59	-0.5	-1.7	1.4	-1.7	0.3	-1.0	1.1	-1.9	-0.8	-3.2
+60	-0.1	-1.6	2.1	-1.1	-0.5	-0.3	0.7	-1.2	-1.5	-2.4
+61										
+62										
+63	-0.3	0.1	0.4	-1.4	0.1		0.7	-1.3	-2.0	-2.0
+64	-1.5	-0.4	-0.8	-0.5	-0.5	-0.3	1.5	-2.1	-1.5	-3.1
+65	-0.9	-1.2	-0.8	-2.1	-2.0	-2.9	0.4	-1.9	-1.8	-4.4
+66	-0.2	-1.4	0.1	-1.1	0.9		1.7	-1.6	-1.6	-2.5
+67	-2.2	0.1	-0.4	-0.7		-2.0	1.2	-1.3	-2.0	-3.5
+68	-1.0	-0.6	-0.5	-1.5		-1.4	0.8	-1.4	-2.3	-2.3
+69	-0.5	-1.6	-0.5	-1.8	1.4	-0.7	0.8	-1.6	-1.9	-3.5
+70	-1.2	-1.7	-3.3	-2.1			-0.3	-2.9	-2.5	-3.2
+71	0.6	-1.0	0.9	-1.5	1.0		1.2	-2.4	-1.4	-2.8
+72	0.5	-0.6	-0.2	-0.9			1.1	-2.4	-3.0	-1.7
+73	0.3	0.0	-0.5	-1.4		1.1	2.3	-2.2	-0.7	-2.3
+74	0.3	-0.7	0.7	-1.5	0.5	-2.1	1.7	-1.9	-0.1	-1.3
+75	-0.2	-0.5	-0.7	-0.8		-1.7	-0.5	-1.6	0.2	-2.2
+76	1.6	0.3	0.3	-1.3	0.8	0.1	0.9	-1.0	0.4	-0.1
+77	-0.3	0.1	0.6	-2.1				-2.2	-1.6	-1.3
+78	-0.7	-0.4	0.2	-1.8	-0.2			-2.4	-0.1	-1.4
+79	0.3	-1.5	0.6	-1.0	-0.5		0.4	-1.2	-0.5	-2.5
+80	-0.6	-1.3	-1.8	-0.6			-3.0	-1.9	-0.2	-2.7
+81	0.4	-1.1	-1.4	-1.6	-0.4	-1.7		-2.1	-1.3	-2.9
+82	0.4	-0.7	-1.0	-1.2	0.1	-2.4	-0.8	-1.4	-1.1	-1.8
+83	-0.7	-1.0	-1.5	-2.7	-0.1		-1.2	-1.7	0.0	-2.4
+84	-0.9	-1.4	-1.3	-1.0	0.6	0.3	-1.1	-2.0	-1.0	-2.2
+85	-0.8	-1.1	-1.3	-1.2			-2.3	-1.5	-1.4	-2.8
+86	0.0	-2.6	-1.3	-0.8	-3.5	-2.5	0.3	-2.6	-1.4	-3.0
+87	-0.1	-0.6	-1.0	-1.1	-1.2		-2.4	-1.8	-0.2	-2.0
+88	0.5	-1.4	-0.8	-1.9	1.0	-0.6	-0.3	-2.6	-0.9	-3.1
+89	-0.8	-0.9	-0.2	-1.2	-0.1	-1.2	0.0	-2.1	-0.8	-1.6
+90	-0.9	-0.6		-1.2		-1.6		-2.1	-0.8	-1.6
+91	2.5	-2.2	3.7	-2.6	2.2	-0.8	0.8	-0.7	1.0	-3.1
+92	-0.2	-1.2	-0.9	-1.6	-0.9	0.4		-2.3	-1.2	-4.0
+93	-0.7	-1.0	-1.2	-2.9	0.0	-0.2		-1.7	-1.4	-2.4
+94	-0.7	-0.3	-1.9	0.8	1.0	0.1	-0.5	-1.5	-0.8	-0.9
+95	2.1	-1.2	1.3	-1.8	0.8	0.3	1.1	-2.2	0.7	-1.0
+96	-1.1	-0.5	-1.7	-0.8	0.6	0.6	0.6	-1.7	-0.8	-2.4
+97										
+98										
+99										
+100										
+101										
+102										
+103										
+104										
+105										
+106	3.1	-1.4	5.8	-3.0	5.1	-6.1	-2.8	5.9	1.3	-2.9
+107	-1.1	-2.0	0.9	-1.4	0.4	1.1	-1.6	-1.4	-1.7	-2.6
+108	0.4	0.2	0.4	-1.8	0.1	2.9	0.5	-0.9	-0.7	-1.0
+109										
+110										
+111	-3.0	-1.9	-0.7	-1.4	-1.7	1.9	-0.6	-1.6	-1.4	-2.0
+112	-1.0	-3.1	0.6	-2.3	-3.2	5.7	1.6	-1.3		-1.1
+113	-1.7	-2.3	-0.1	-1.8	-1.1	0.1		-1.1		-2.0
+114	-0.5	-2.7	0.9	-1.6		-0.8	-1.8	-1.3		-3.3
+115	-0.9	-2.5	-1.8	-1.3		-0.5	-2.1	-1.3	-2.1	-2.2
+116										
+117	-2.4	-2.6	-3.7	-2.1	-1.8		-1.0	-1.3	-1.4	-3.2
+118	-1.5	-1.3	-1.8	-0.8	-1.1	0.5	-1.0	-2.1	-0.1	-1.9
+119	-1.4	-2.2	-1.5	-2.7			-2.1	-1.5	-2.3	-2.3
+120	0.2	-1.2	0.5	-2.1	0.7	-0.8	-0.6	-0.6	-0.3	-2.3
+121	0.4	-0.4	1.0	-2.7	0.8	-0.4	-0.1	-0.7	-2.2	-2.6
+122	0.0	-0.2	-0.2	-1.8	-0.4	-0.7	0.7	-0.3		-2.3
+123	-1.2	-2.1	0.3	-1.4	-1.4	-0.3	-1.0	-0.9	-2.7	-2.5
+124	0.0	-0.8	-0.2	-1.7	-0.4	0.8	0.4	-1.5	-2.1	-2.3
+125	-1.0	-2.1	0.5	-1.7	-0.9	0.2	-0.3	-1.0		-2.7
+126	-1.7	-1.5	0.9	-2.1	-2.2	0.6	-2.0	-0.9		-3.4
+127	-0.7	-2.5	0.4	-2.1	-1.1	0.2	-1.0	-1.4	-2.5	-3.2
+128	-2.8	-2.7	-1.6	-3.6		-1.8		-1.0		-4.3
+129	-2.1	-2.0	-0.6	-3.1				-1.4		-3.5
+130	-1.1	-2.7	-0.8	-1.9				-1.1	-2.3	-4.5
+131	0.2	-0.8	-0.9	-1.5	0.6	-0.7	1.0	-1.8	-1.6	-2.2
+132	-1.4	-2.6	-1.0	-2.6		-3.4	1.0	-1.4	-1.2	0.0
+133	-1.0	-2.8	-0.1	-2.1			-2.2	-0.8	-2.2	-2.9
+134	-1.5	-2.4	-0.5	-1.7	-0.3	-0.3	-0.4	-1.2	-2.8	-3.3
+135	-2.2	-2.9	-1.2	-3.4				-1.5		-4.3
+136	-0.1	-1.1	0.0	-2.2	-0.8	2.6	0.3	-1.5	-1.5	-2.9
+137	-2.4	-2.1	-1.7	-2.0				-0.3		-4.6
+138	-0.7	-2.4	-0.4	-2.2				-0.9	-2.6	-3.2
+139	-1.7	-1.8	0.1	-2.5	-1.2	1.6	-2.2	-1.2	-3.4	-5.4
+140	-3.2	-4.4		-5.0				-1.0		-4.6
+141	-2.5	-2.4	-2.2	-2.6		-1.2		-1.0		-4.5
+142	-1.5	-1.8	0.7	-2.8	-1.5	0.9	-3.1	-0.6	-2.2	-5.6
+143	-2.3	-2.6	-0.9	-3.0		-0.5		-1.6		-5.4
+144	-1.7	-1.9	-1.7	-2.8		-2.3		-1.3		-4.2
+145										
+146										
+147										
+148										
+149										
+150										
+151										
+152										
+153										
+154	-1.3	-1.0	-0.3	-1.2	-0.1	0.9	0.4	-1.7	-3.5	-1.6
+155	-0.4	-1.8	1.1	-1.8	-0.1	0.5	-0.3	-1.7	-2.4	-3.4
+156	-0.2	-1.9	1.5	-1.8	-1.0	-0.3	0.1	-1.5	-2.4	-3.4
+157										
+158										
+159	-0.2	-0.4	-0.2	-1.6	0.5	0.3	0.6	-1.8	-3.5	-2.3
+160	-1.5	-1.1	-2.0	-0.7	-1.2	-0.3	0.0	-2.2	-3.5	-3.5
+161	-1.5	-1.4	-0.9	-2.0	-1.2	-0.7	-1.6	-2.2	-3.4	-4.3
+162	-0.4	-1.6	-0.8	-1.9	0.5	-3.0	-0.3	-1.8	-3.4	-3.0
+163	-1.7	-0.4	-1.2	-2.8		-0.1	0.0	-1.9	-2.0	-3.4
+164	-0.7	-0.7	-1.1	-2.7			0.1	-1.6	-2.5	-2.9
+165	-0.2	-1.5	-0.9	-2.3		-0.7	0.3	-2.1	-3.0	-3.7
+166	-1.8	-2.0	-1.9	-2.7				-1.7	-3.3	-3.2
+167	0.6	-1.7	-1.1	-1.8	0.6	0.6	0.8	-2.1	-2.3	-2.7
+168	0.5	-1.1	-1.0	-0.9	-0.2	-0.2	0.3	-1.8	-2.9	-1.5
+169	0.1	-0.7	-0.9	-0.7			0.7	-2.1	-1.6	-2.2
+170	0.3	-1.2	-0.4	-1.1	0.7	-1.7	0.4	-2.0	-0.4	-1.7
+171	-0.6	-1.2	-1.9	-1.5			0.0	-2.5	-0.2	-2.4
+172	1.1	-0.6	0.8	-1.4	0.7	0.3	0.6	-2.3	0.1	-0.4
+173	-1.1	-0.6	-1.7	-0.9					-2.1	
+174	-0.7	-0.7	0.1	-1.6	-4.2			-2.7	-0.7	-2.1
+175	0.2	-1.6	0.6	-1.8	1.3	0.6	-0.4	-1.9	-1.6	-2.4
+176	-1.0	-2.0	-3.2	-1.6	-1.0		0.3	-1.8	-1.0	-2.6
+177	0.1	-1.5	-1.4	-1.3	-0.6	0.0		-3.2	-1.2	-2.8
+178	0.1	-1.2	0.5	-1.2	0.7	-0.8	-0.9	-1.9	-1.0	-2.2
+179	-0.7	-1.1		-1.2	-0.6	-0.6	0.5	-2.7	-1.1	-2.4
+180	-1.2	-1.5	-0.6	-2.1		0.7	-1.5	-3.6	-2.2	-2.9
+181	-0.7	-1.7	-1.7	-2.2		0.5		-2.9	-2.9	-3.1
+182	-1.0	-4.0	-1.8	-2.2	-2.6	-2.3	-0.4	-2.8	-1.7	-3.3
+183	-0.4	-1.4	-0.3	-1.4	-0.6	-1.8	0.4	-3.6	-0.2	-2.0
+184	0.3	-1.7	-0.2	-1.9	-0.1	-0.4	-1.5		-2.3	
+185	-0.8	-1.4	-2.1	-0.4		-0.8	-0.1	-1.7	-1.1	-1.6
+186	-1.5	-1.0	-2.3	-0.8	-1.5	-3.8	-0.9	-2.6	-1.3	-1.9
+187	2.1	-2.7	2.2	-2.8	1.0	-2.5	0.3	-0.7	0.1	-3.5
+188	-0.6	-1.5	-2.7	-1.9	0.5	0.8		-2.4	-1.4	-5.7
+189	-1.2	-1.8	-1.1	-2.7	1.2	0.7			-1.3	
+190	-0.5	-1.2	-1.6	0.7	0.6	0.4	-0.9	-1.2	-0.9	-1.3
+191	2.2	-1.8	0.6	-1.1	1.4	0.7	1.0	-1.9	0.7	-1.3
+192	-1.0	-1.3	-0.2	-0.9	0.3	0.3		-3.2	-2.1	-2.1
+193										
+194										
+195										
+196										
+197										
+198										
+199										
+200										
+201										
+202	2.8	-1.9	6.0	-3.4	8.5	-4.7	-2.1	5.1	1.6	-3.1
+203	-1.6	-2.3	0.7	-1.8	-0.4	1.6	-1.2	-1.0	-2.0	-2.5
+204	0.5	-0.2	0.4	-1.7	1.6	-0.6	0.5	-0.9	-1.2	-0.9
+205										
+206										
+207	-3.1	-2.0	-0.8	-0.9	-0.9		-0.9	-1.4	-2.5	-2.3
+208	-1.0	-3.1	0.7	-2.4	-2.7		1.5	-1.6		-0.9
+209	-1.6	-2.3	0.0	-1.5	-0.3	-0.2		-0.8	-1.8	-1.7
+210	-0.7	-2.7	0.9	-1.5	-0.8		-1.7	-1.4	-7.6	-3.4
+211	-1.2	-2.3	-1.5	-1.4	-2.4	-0.2	-1.3	-1.4		-2.1
+212										
+213	-2.7	-1.8	-2.8	-0.8				-1.6	0.3	-3.2
+214	-1.3	-1.4	-1.3	-0.4	-0.7	0.6	0.0	-1.9	-0.4	-1.6
+215	-1.2	-2.4	-1.5	-2.3			-1.7	-1.3	-1.0	-1.9
+216	0.1	-1.3	0.1	-2.3	1.3	-0.9	-0.7	-0.5	0.5	-2.4
+217	0.7	-0.7	1.1	-2.6	1.2	0.2	-0.2	-0.7	-2.5	-3.9
+218	0.4	-2.6	-0.3	-2.1	-0.6	0.6	0.8	-2.0	-3.0	-2.5
+219	-1.3	-2.6	0.1	-1.6	-0.4	0.8	-0.4	-1.6	-2.8	-5.5
+220	-0.1	-1.4	-0.7	-1.6	0.0	1.5	0.6	-1.7	-2.2	-3.3
+221	-1.2	-2.7	0.0	-2.3	-0.1	1.2	0.1	-1.4	-3.1	-3.9
+222	-1.9	-2.3	0.1	-2.0	-2.0	2.8	-1.0	-1.3	-3.5	-2.8
+223	-1.0	-3.1	0.1	-2.2	0.3	0.1	-0.4	-1.4	-3.1	-4.4
+224	-2.4	-2.1	-1.8	-3.2		-0.3	1.5	-1.5		-4.4
+225	-2.0	-2.5	-0.5	-3.4	-2.4	-2.1		-1.4	-2.8	-5.0
+226	-1.4	-3.2	-0.6	-2.6	-1.7	-0.1		-1.8	-3.0	-6.3
+227	0.1	-1.2	-1.5	-1.4	1.8	0.5	1.4	-2.1	-2.7	-2.1
+228	-1.4	-3.1	-0.4	-3.3		-0.8		-1.7		-5.6
+229	-1.7	-3.1	-0.1	-2.0			-1.4	-1.0	-2.9	-3.1
+230	-1.3	-3.0	-1.4	-1.6	0.6	-0.2	-0.1	-1.0	-3.4	-3.9
+231	-1.7	-1.8	-1.8	-4.4				-1.2	-3.1	-3.8
+232	-0.1	-1.5	-0.7	-2.0	1.2	4.7	0.8	-1.6	-2.8	-1.9
+233	-2.8	-2.7	-1.2	-2.6		-5.3		-1.7	-3.2	0.0
+234	-1.1	-2.7	-1.4	-2.5		-0.7		-1.9	-2.5	-2.3
+235	-1.8	-2.2	-0.2	-2.5	-1.0	1.6	-1.0	-1.2	-3.8	-3.2
+236	-3.2	-3.6	-3.1	-3.6				-1.4		-4.6
+237	-2.2	-2.8	-2.0	-2.5	-0.2	-1.5	-2.7	-1.6	-3.7	-4.7
+238	-1.5	-2.2	0.6	-3.1	-0.7	0.8	-1.8	-0.6		-2.9
+239	-2.6	-3.1	-0.9	-2.6	-2.6	0.4		-1.1	-3.5	-3.7
+240	-1.6	-2.8	-1.2	-2.3	-0.5	-0.8		-1.8	-2.7	-2.4
+241										
+242										
+243										
+244										
+245										
+246										
+247										
+248										
+249										
+250	-1.3	-1.6	-0.1	-1.2	-0.7	2.0	-0.2	-2.0	-3.6	-1.4
+251	0.0	-2.2	0.8	-2.0	0.0	0.9	-0.3	-1.8	-2.3	-3.4
+252	0.3	-2.3	0.8	-1.6	0.9	-1.1	-0.5	-1.0	-2.3	-3.2
+253										
+254										
+255	0.0	-0.6	-0.2	-1.6	1.2	2.6	0.6	-1.7	-3.3	-2.2
+256	-1.1	-1.5	-1.2	-0.6	-1.4	1.2	-0.4	-2.4	-2.6	-3.1
+257	-1.4	-2.5	-0.8	-1.7	-2.0	1.3	-1.3	-2.5	-2.0	-3.7
+258	-0.5	-1.8	-0.8	-1.3	-0.5	0.5	-0.7	-1.9	-2.0	-2.7
+259	-2.0	-0.6	-1.4	-0.8	-1.7	0.8	0.4	-3.0	-2.2	-2.4
+260	-0.9	-1.0	-1.0	-2.8			1.1	-2.2	-2.9	-2.9
+261	-0.2	-2.1	-0.8	-2.0	-0.9	-0.5	0.2	-2.1	-2.3	-3.9
+262	-1.2	-2.0	-1.4	-3.7	-1.4	-0.1			-2.6	
+263	0.7	-1.7	-0.3	-2.1	0.1	0.1	0.6	-1.9	-2.1	-2.6
+264	0.9	-1.5	-1.0	-0.5	-1.3	1.0	0.1	-1.9	-3.0	-1.3
+265	-0.1	-1.1	-1.0	-0.7		-0.3	0.6	-1.6	-1.7	-1.8
+266	-0.2	-1.5	0.0	-1.1	0.2	0.7	0.6	-1.5	-0.4	-2.0
+267	-0.9	-1.6	-2.0	-0.5	-2.3	-1.4	0.3	-2.1	-1.8	-2.7
+268	0.8	-1.1	0.7	-1.1	1.0	0.0	0.5	-0.9	0.1	-0.2
+269	-1.4	-0.7	-1.4	-1.0	-2.4	-1.7		-3.1	-2.3	-1.7
+270	-0.6	-0.2	-1.3	-0.7	-1.7		-1.0	-1.7	-1.0	-2.1
+271	0.2	-1.3	0.8	-1.6	-0.9	1.1	-0.3	-1.4	-1.8	-3.0
+272	0.6	-1.4	-2.8	-1.3		-1.6	-1.9		-1.4	
+273	-0.3	-2.1	-1.0	-0.6		-0.6	-1.5	-2.9	-1.2	-2.6
+274	-0.2	-1.5	0.1	-0.7	-1.5	-1.1	-0.5	-0.9	-2.0	-2.6
+275	-0.9	-1.4	-1.5	-0.1		-0.5	-0.2	-0.9	-1.9	-2.2
+276	-1.2	-1.8	-0.7	-2.1		-1.1	0.5	-1.4	-1.7	-3.3
+277	-1.0	-1.8	-0.4	-1.4		-2.1			-2.2	
+278	-1.4	-4.2	-1.8	-1.0	-2.8	-2.3	-0.4	-2.5	-2.2	-3.5
+279	-0.8	-1.6	-0.2	-1.0	-1.3	-0.1	-1.9	-3.7	-0.9	-2.0
+280	0.0	-1.7	-0.2	-1.3	-2.2	-1.2	-0.8	-2.0	-1.9	-2.9
+281	-0.8	-1.7	-0.2	0.4	-2.1	-0.7	0.4	-1.2	-2.5	-3.2
+282	-1.3	-1.2	-1.1	-0.3		-0.6	-0.4	-1.6	-1.8	-1.9
+283	1.8	-2.9	2.1	-2.8	0.3	-1.0	0.2	0.0	-0.2	-3.4
+284	-0.8	-1.9	0.1	-1.9	-1.5	-2.1	1.2	-2.7	0.0	-3.4
+285	-1.4	-1.6	-2.4	-0.9	-0.9	-1.7		-3.0	-1.7	-2.8
+286	-0.8	-1.4	-1.7	0.8	0.9	-1.0	0.1	-0.7	-0.9	-1.9
+287	1.8	-1.8	0.9	-1.1	1.3	-0.6	1.2	-1.4	0.6	-1.4
+288	-1.5	-1.2	0.7	-0.5	1.1	-1.1	-1.4		-2.7	
+289										
+290										
+291										
+292										
+293										
+294										
+295	0.3	-1.1	0.5	-2.0	-0.4	2.6	0.0	-1.9	-1.9	-2.0
+296	0.9	-0.3	0.1	-1.6	2.2	1.8	0.8	-0.9	0.1	0.0
+297	-1.4	-2.4	0.8	-2.5	-0.7	1.5	-0.9	-2.3		-2.1
+298	-0.7	-2.7	0.6	-2.4	0.9	0.2	-0.5	-0.9	-1.1	-2.1
+299	-1.0	-2.1	0.4	-2.4	0.3	0.8	-0.3	-0.9		-2.3
+300	3.6	-2.3	6.0	-3.3	8.7	-6.8	-1.9	5.9	-2.2	-4.0
+301	-2.1	-2.3	-1.5	-1.7	-2.0	0.0	-1.2	-1.8		-3.6
+302	-1.0	-2.3	0.0	-1.9	-0.6	5.1	0.0	-1.9	-1.5	-2.3
+303	-2.1	-1.8	-2.9	-2.8	0.3	0.5	-1.6	-1.2	-0.2	-3.1
+304	-0.8	-1.9	-0.6	-2.0	0.5	0.3	-0.4	-1.4	-0.8	-2.4
+305	-2.3	-1.4	-0.5	-3.0	0.4	-0.9		-1.0	-1.4	-3.3
+306										
+307	0.5	-1.9	-0.7	-0.8	4.3	1.1	0.7	-1.3	-0.9	-0.3
+308	-0.1	-2.1	0.2	-2.3	0.3	2.7	0.0	-2.1	-0.2	-2.4
+309	0.9	-0.9	0.8	-1.1	3.8	3.0	0.6	-1.1	1.5	-1.1
+310	-1.2	-2.4	-0.1	-1.9	0.0	0.7	0.1	-1.7	-1.7	-1.9
+311	0.2	-2.4	0.8	-2.7	1.1	2.3	0.1	-1.0	-1.2	-1.5
+312	0.2	-1.2	-0.4	-2.0	1.3	0.0	0.7	-1.6	-0.1	-2.5
+313	-2.3	-1.9	-1.1	-2.0	-1.7	2.3	-1.5	-1.3	-3.3	-2.0
+314	-2.3	-2.2	-1.1	-2.5			-2.7	-2.7		-3.2
+315	-1.4	-2.3	-0.2	-1.8	-0.1	2.1	-1.0	-1.4	-3.9	-3.2
+316	-1.1	-2.1	-1.2	-1.8	-0.4	-1.3		-1.6	-3.4	-2.4
+317	-0.9	-2.5	-1.1	-2.3	0.0	-0.9	-2.6	-1.6	-3.3	-2.6
+318	0.7	-3.2	1.0	-3.1	0.7	-0.4	-2.2	-1.6	-2.9	-2.1
+319	-0.3	-2.0	0.1	-2.1	-0.2	2.7	0.4	-0.7	-2.4	-2.1
+320	-1.3	-2.9	-0.2	-2.9	-0.7	0.4	-1.0	-2.1	-3.7	-4.1
+321	-1.1	-2.9	-0.2	-2.2	-1.8	0.0	-2.0	-1.7	-3.1	-3.5
+322	-1.2	-2.1	-0.7	-1.4	-0.9	2.3	-1.1	-2.2	-3.4	-2.5
+323	0.0	-3.0	-0.6	-2.6	-1.2	-0.8	-1.6	-1.3	-3.2	0.0
+324	0.0	-3.1	-0.7	-2.4	-0.2	-2.0	-2.2	-2.2	-3.5	-4.2
+325	0.9	-0.7	0.0	-2.4	-1.6	0.2	-1.2	-2.0	-2.5	-3.7
+326	-1.1	-2.8	-1.8	-2.3	-0.6	0.4		-1.6		-3.5
+327	0.9	-3.1	-0.5	-1.4	2.5	-0.6	0.4	-1.7	-2.0	-2.7
+328	-1.3	-2.3	-0.7	-2.0	-0.4	-1.0	-1.4	-1.1	-2.8	-4.1
+329	-1.2	-2.5	-2.3	-3.4		-3.3	-1.8	-0.9	-2.8	-4.5
+330	-1.2	-2.2	-0.5	-2.5	-1.0	0.3	-1.4	-0.7	-4.3	-4.1
+331	-1.1	-3.1	-0.6	-2.0	-0.8	-0.1	-2.0	-1.7	-3.7	-3.3
+332	0.6	-2.9	0.1	-2.3	0.3	-0.1	-0.6	-1.1	-3.1	-2.6
+333	-0.6	-3.3	-0.8	-1.8	-1.4	-1.0	-1.0	-1.3	-2.8	-3.3
+334	-1.9	-2.2	-0.8	-3.0	-1.0	-0.6	-1.7	-1.5		-3.2
+335	-0.4	-2.2	0.7	-2.1	0.7	0.3	-0.5	-1.4	-2.0	-2.1
+336	-1.1	-2.0	-1.2	-2.3	-1.6	-0.9		-1.4	-4.2	-4.6
+337										
+338										
+339										
+340										
+341										
+342										
+343	1.0	-0.3	-0.6	-1.7	1.9	1.9	0.4	-0.7	-0.6	0.2
+344	-0.5	-1.8	-0.9	-2.1	-1.3	2.1	0.4	-1.1	-2.4	-1.4
+345	4.2	-1.0	4.8	-4.1	9.2	-6.8	-1.4	2.6	1.7	-4.2
+346	1.1	0.4	-0.5	-1.3	2.3	2.1	0.6	-0.8	-1.3	0.5
+347	-0.6	-1.6	0.9	-2.5	-0.1	0.8	-0.9	-0.9	-3.8	-3.6
+348	4.0	-2.0	4.3	-2.2	0.4	-0.6	-1.3	-0.6	-0.6	-3.2
+349	1.6	-1.2	1.1	-1.8	2.9	-0.1	-0.3	-0.4	-1.3	-2.4
+350	0.9	0.5	0.1	-1.1	0.9	2.1	1.2	-1.2	-2.3	-0.4
+351										
+352	-2.1	-1.9	-3.6	-2.3						
+353										
+354	-2.6	-2.4	-4.0	-2.1	-2.3		-2.3		-1.3	
+355	-0.3	-0.8	0.7	-2.3	0.0	1.0	-0.7	-1.0	-1.6	-2.5
+356	-0.8	-1.7	-0.3	-1.7	-0.3	1.4	-0.2	-1.4	-2.3	-2.4
+357	-0.7	-1.9	0.7	-2.2	-0.9	0.4	-1.5	-1.6	-1.6	-2.4
+358	-0.6	-1.8	0.0	-1.8	0.2	0.4	0.1	-1.3	-1.9	-2.3
+359	-0.2	-1.7	-0.1	-2.0	1.0	0.2	0.3	-1.1	-1.0	-2.5
+360	-0.3	-1.6	0.8	-2.9	-0.5	2.0	-0.1	-1.5	-1.4	-2.1
+361	-0.4	-2.0	-0.7	-1.2		0.5		-2.4	-2.6	-2.6
+362	-1.1	-1.7	-2.1	-1.8		-1.2			-2.2	
+363	-1.2	-1.7	-1.2	-0.3	-1.9	0.9	-0.5	-1.4	-2.0	-1.5
+364	0.4	-1.9	0.1	-1.3	-0.1	-0.6	-0.1	-1.7	-0.1	-2.1
+365	-0.5	-1.3		-1.2		-2.2		-4.0	-1.3	-2.5
+366	-0.6	-2.0	-0.3	-0.6	0.3	-0.5	1.6	-2.2	-0.4	-0.5
+367	-1.9	-1.0	-1.2	-0.7	-1.3	1.5	0.7	-2.0	-2.1	-1.6
+368	-1.0	-1.3	-3.8	-1.1	-1.0	-2.2		-1.4	-2.2	-2.6
+369	0.4	-1.3	-0.3	-1.5	-0.2	-0.4	1.1	-1.6	-0.9	-2.1
+370	-0.3	-0.6	-3.1	-1.2	-0.2	-0.4	-0.8	-1.6	-0.8	-2.9
+371	-0.4	-1.7	-3.4	-0.8		-1.9		-1.7	-1.4	-3.0
+372	-0.2	-1.7	-3.9	-1.4	1.5	-1.9	-0.3	-1.5	-1.2	-2.4
+373	-0.5	-1.8	-0.7	-1.0	-0.1	0.9	-0.9	-2.0	-2.0	-2.2
+374	-0.4	-2.3	-0.3	-0.7	0.1	0.9	-1.1	-2.5	-2.0	-2.7
+375	0.1	-1.4	-3.2	-0.7	0.4	-0.3	-0.6	-1.9	-1.2	-2.5
+376	-1.5	-2.6	-4.6	-1.8		-1.4		-1.3	-2.4	-2.4
+377	-0.7	-2.3	-3.6	-1.1		-1.2			-2.3	
+378	-0.8	-1.8	-4.7	-0.7		-1.7	-0.4	-2.5	-1.7	-2.7
+379	-1.0	-2.2	-1.7	-1.3	-1.1	0.2	-0.8	-2.6	-2.1	-2.4
+380	-0.3	-1.7	-2.0		-1.5	-3.9	-0.4	-1.8	-2.4	-2.0
+381	-1.1	-1.8	-3.8	-0.9		-3.2	-1.4	-2.1	-2.5	-2.9
+382	-0.9	-2.2	-5.2	-1.3	0.5	-0.2	0.2	-1.6	-0.9	-2.5
+383	1.2	-0.6	-0.3	-1.0	2.5	0.6	1.0	-0.4	0.5	-0.3
+384	-0.3	-1.9	-2.8	-0.9	1.1	-1.2	0.7	-1.3	-0.5	-0.3
+385										
+386										
+387										
+388										
+389										
+390										
+391	0.1	-1.1	0.8	-2.2	0.1	2.1	0.0	-1.8	-2.4	-1.7
+392	0.9	-0.4	0.1	-1.6	0.3	1.9	1.1	-1.0	-0.2	0.3
+393	-1.3	-2.4	0.9	-2.5	-0.3	1.5	0.1	-2.0	-2.7	-1.9
+394	-0.7	-2.3	0.8	-2.2	1.0	0.3	-0.6	-1.5	-1.6	-2.0
+395	-1.4	-1.9	0.6	-2.3	0.8	1.0	-0.7	-1.6	-2.1	-3.0
+396	4.0	-3.1	5.7	-3.2	8.9	-6.7	-1.8	3.0	-0.1	-3.9
+397	-1.9	-2.2	-1.3	-2.5	-1.1	0.6		-2.3	-1.9	-3.5
+398	-1.1	-2.2	0.7	-2.0	-1.0	4.3	-1.1	-1.6	-2.0	-1.7
+399	-2.1	-2.0	-0.9	-2.4	1.0	0.8	-1.2	-2.0	0.1	-2.6
+400	-1.2	-1.9	-0.6	-1.9	1.3	0.4	-0.5	-1.6	-2.4	-2.6
+401	-2.6	-1.4	-0.7	-2.7	0.4	-0.5	-1.3	-1.1	-2.2	-3.2
+402										
+403	0.5	-2.2	-0.4	-0.9	3.1	0.3	0.6	-1.5	-1.2	-0.4
+404	-0.1	-2.3	0.6	-2.4	0.0	2.0	-0.1	-2.0	-1.0	-2.2
+405	1.0	-1.2	0.8	-1.3	2.2	3.7	0.7	-1.2	-0.4	-1.0
+406	-1.4	-2.1	-0.3	-1.7	0.4	0.9	0.1	-1.5	-2.7	-2.0
+407	0.2	-2.3	0.2	-2.4	0.8	1.9	0.5	-1.0	-1.3	-2.3
+408	0.0	-1.6	-0.6	-2.0	1.9	0.1	0.8	-1.7	-0.4	-3.0
+409	-2.1	-1.5	-1.2	-1.7	-1.1	2.1	-1.2	-1.3	-2.2	-2.2
+410	-2.1	-2.8	-1.5	-2.3			-1.5	-1.7	-0.6	-3.8
+411	-1.4	-1.9	-0.1	-1.2	0.2	1.6	-0.5	-1.9	-1.8	-1.8
+412	-1.0	-1.9	-1.5	-0.6	0.9	-0.5	-0.3	-1.3	-1.8	-2.4
+413	-0.4	-1.9	-1.5	-2.4	-0.3	0.1	-1.7	-1.5	-2.4	-3.6
+414	0.7	-2.3	0.5	-2.3	1.5	-0.1	-1.6	-1.5	-2.1	-1.8
+415	-0.4	-1.9	0.5	-1.8	-0.1	1.9	-0.1	-1.0	-1.7	-1.9
+416	-1.7	-2.5	-0.6	-2.1	0.6	0.6	-2.2	-2.1	-2.4	-2.8
+417	-1.1	-2.7	-0.2	-2.1	-0.6	-0.1	-2.2	-1.3	-3.7	-4.9
+418	-1.3	-1.9	-0.8	-1.8	-0.5	2.5	-1.6	-1.9	-2.2	-2.6
+419	-0.3	-1.9	-1.6	-2.6	0.3	-0.9	-2.5	-1.7	-2.5	-2.9
+420	-0.2	-2.2	-0.7	-1.5	-0.9	-2.1	-1.9	-1.7	-2.2	-2.8
+421	0.8	-0.5	0.1	-3.7	-0.5	0.4	-1.3	-2.3	-2.5	-3.3
+422	-1.2	-2.3	-2.5	-2.2	0.3	0.4	-2.3	-2.0	-4.3	-3.0
+423	0.8	-3.2	-0.5	-1.6	2.1	-0.6	0.7	-1.8	-1.1	-3.6
+424	-1.8	-2.1	-1.1	-1.8		-0.4	-1.1	-1.5	-3.3	-4.0
+425	-1.7	-1.9	-2.2	-4.0		-2.1	-1.1	-1.0	-3.7	-1.9
+426	-1.8	-1.9	-0.3	-2.7	-0.3	1.0	-0.6	-1.4	-2.6	-3.3
+427	-1.1	-2.6	-1.2	-2.5	-0.2	0.2	-2.0	-1.2		-3.3
+428	0.5	-2.7	0.2	-2.4	1.1	0.1	-0.6	-1.1	-2.6	-2.6
+429	-0.4	-2.8	-1.4	-1.8	-0.4	-1.6	-1.1	-1.3	-2.8	-4.0
+430	-2.0	-1.7	-0.8	-2.7	-1.3	-0.4		-1.3	-3.8	-1.4
+431	-0.8	-2.2	0.3	-1.6	1.3	0.7	-0.4	-1.3	-2.3	-1.5
+432	-1.3	-1.9	-1.1	-1.8	-1.1	-1.8	-2.1	-1.4	-2.4	-3.0
+433										
+434										
+435										
+436										
+437										
+438										
+439	1.1	-0.4	-0.2	-1.5	2.1	1.5	0.6	-0.6	-0.6	0.3
+440	-0.5	-0.7	-1.0	-2.2	-1.1	3.0	0.5	-2.0	-2.3	-1.4
+441	4.4	-2.3	4.9	-2.8	8.0	-7.1	-1.0	3.0	2.3	-4.0
+442	0.9	0.1	0.2	-1.6	2.1	1.7	1.0	-0.2	-0.8	0.5
+443	-1.0	-1.8	1.1	-2.8	0.4	0.7	-0.7	-1.9	-3.2	-3.2
+444	3.9	-2.0	5.5	-2.7	0.5	-1.0	-0.8	-0.5	-1.2	-3.6
+445	1.5	-2.0	1.2	-2.1	2.6	-0.4	0.0	-0.3	-0.6	-2.4
+446	1.0	0.1	0.2	-0.9	0.5	1.8	1.3	-1.1	-1.7	-0.7
+447										
+448	-2.6	-3.0	-3.0							
+449										
+450	-3.0	-2.3	-3.4	-2.9		-1.4	-1.5	-1.5	-2.9	-4.5
+451	-0.4	-1.5	0.3	-1.8	0.1	0.9	-0.3	-0.7	-2.1	-2.5
+452	-0.7	-1.9	-0.3	-1.6	0.4	1.2	0.6	-1.5	-2.7	-2.3
+453	-1.0	-2.0	0.4	-2.2	-0.5	0.6	-1.3	-1.9	-2.6	-2.5
+454	-0.9	-2.0	0.3	-1.3	0.3	0.4	0.6	-1.0	-2.4	-2.3
+455	-0.8	-1.9	-0.1	-1.4	1.2	0.1	0.8	-1.1	-1.7	-2.5
+456	-1.1	-1.9	0.5	-2.1	-0.3	1.8	0.2	-1.2	-1.5	-2.2
+457	-1.3	-1.5	-2.4	-1.6	-1.9	0.3	-0.3	-1.7	-2.2	-3.3
+458	-1.3	-0.8	-4.5	-3.0		-1.5		-1.6	-2.1	-2.6
+459	-1.3	-1.7	-4.1	-1.2	-0.2	2.0	-0.6	-1.4	-2.1	-1.4
+460	0.0	-2.1	-4.1	-1.6	0.3	0.2	-0.6	-1.3	0.0	-2.6
+461	-0.8	-1.3	-4.2	-1.2	-0.9	-0.9			-1.0	
+462	-0.9	-2.0	-3.6	-0.8	0.1	0.5	1.6	-1.8	-0.3	-0.7
+463	-2.6	-1.0	-1.8	-1.5	-0.5	1.0	1.2	-1.9	-0.9	-2.0
+464	-1.7	-1.7	-3.7	-3.1	-1.8	-2.2		-1.8	-2.0	-2.5
+465	-0.2	-1.4	-2.3	-2.3	-0.1	0.0	0.9	-1.4	-0.6	-2.1
+466	-0.8	-0.3	-3.9	-1.7	-0.7	-0.7	-0.9	-2.2	-0.7	-2.9
+467	-0.8	-0.5	-3.2	-1.0		-1.8			-0.9	
+468	-0.3	-1.9	-2.1	-1.5	0.2	-1.0	-0.4	-1.9	-0.5	-2.1
+469	-1.3	-1.7	-2.0	-1.6	-0.5	0.7	-0.8	-1.4	-1.0	-2.8
+470	-1.4	-2.4	-2.6	-1.7	-0.6	0.6	-1.0	-1.9	-1.6	-3.8
+471	-0.4	-1.5	-3.2	-1.7	0.5	-0.1	-1.1	-1.6	-1.0	-2.6
+472	-1.5	-2.4	-3.2	-2.3		-1.7		-2.7	-1.8	-2.3
+473	-1.4	-2.7	-2.3	-2.2		-0.2		-1.3	0.0	-3.0
+474	-1.2	-1.7	-2.5	-1.2	-0.5	0.1	-1.2	-0.3	-0.8	-2.4
+475	-1.6	-2.0		-2.0	-0.7	0.7		-1.8	-1.9	-2.9
+476	-1.0	-1.6	-4.0	-2.7		-1.3	-1.3		-2.4	
+477	-1.4	-1.7	-5.0	-1.9		-0.9		-0.5	-1.4	-3.3
+478	-1.4	-2.5	-4.1	-2.1	0.3	-0.5	-0.1	-1.8	-0.6	-3.1
+479	0.9	-0.8	0.4	-1.2	3.1	1.3	0.8	-0.2	0.9	-0.8
+480	-0.8	-2.0	-4.2	-1.6	0.9	-0.3	0.9	-0.9	-0.6	-0.8
+481										
+482										
+483										
+484										
+485										
+486										
+487	0.1	-1.2	1.3	-1.9	0.7	1.3	0.0	-1.4	-2.0	-1.8
+488	1.0	-0.6	0.3	-1.6	2.4	2.0	0.8	-1.2	-0.1	0.4
+489	-1.4	-2.3	0.6	-2.0	-0.1	1.9	-0.6	-1.6	-1.9	-1.3
+490	-0.6	-2.4	0.9	-2.1	1.3	0.5	-0.6	-1.3	-1.3	-2.0
+491	-1.3	-2.1	1.0	-1.6	1.5	1.3	-0.6	-1.4	-1.3	-2.9
+492	4.9	-3.7	6.1	-3.5	7.9	-6.5	-1.7	5.8	2.2	-3.2
+493	-2.3	-2.3	-1.1	-1.7	-1.7	1.3		-1.9	-2.2	-2.5
+494	-1.5	-2.0	0.3	-1.9	-0.7	4.7	-0.8	-1.8	-2.8	-1.4
+495	-2.0	-1.7	-0.6	-3.0	-0.2	-0.2	-1.8	-1.3	-2.3	-1.8
+496	-1.4	-2.0	0.0	-1.4	0.4	0.2	-0.5	-1.8	-2.2	-2.7
+497	-2.5	-1.3	-0.9	-2.0	0.1	-0.4		-1.9	-1.1	-2.8
+498										
+499	0.3	-2.3	-0.5	-1.0	2.8	-0.6	0.6	-1.2	-0.3	-0.3
+500	-0.3	-2.2	0.6	-2.3	0.6	1.6	0.2	-1.9	-0.9	-2.5
+501	0.9	-1.3	0.7	-1.5	2.3	3.9	0.8	-0.8	-0.6	-1.8
+502	-1.5	-2.0	-0.1	-1.0	0.6	1.2	-0.6	-1.4	-2.5	-1.4
+503	0.1	-2.2	0.8	-1.6	1.1	0.8	0.4	-0.8	-1.8	-2.3
+504	0.0	-1.5	-0.4	-1.5	2.1	0.3	1.0	-1.7	-0.8	-3.2
+505	-2.7	-1.9	-0.5	-1.5	-0.8	2.3	-0.7	-2.1	-2.2	-1.9
+506	-2.2	-3.0	-0.7	-1.8		-0.6		-1.9	-2.4	-2.9
+507	-1.6	-1.7	0.1	-1.8	0.5	1.9	-0.1	-1.7	-2.5	-2.0
+508	-1.5	-1.6	-1.6	-1.1	0.6	-0.2	-0.3	-1.5	-1.7	-2.6
+509	-1.0	-1.9	-0.6	-1.9	0.1	0.2	-1.1	-2.0	-2.6	-3.2
+510	0.4	-2.5	1.3	-2.2	1.9	-0.3	-1.1	-1.4	-2.4	-2.3
+511	-0.8	-1.8	1.2	-1.6	0.0	1.9	0.3	-1.8	-1.9	-1.8
+512	-1.5	-2.2	0.3	-2.4	0.4	0.7	-2.0	-1.6	-3.1	-2.3
+513	-1.4	-2.0	0.2	-2.8	-0.1	0.5	-1.6	-1.8	-2.7	-2.2
+514	-1.7	-1.7	-0.1	-1.4	-0.3	2.2	-1.2	-2.0	-2.0	-2.5
+515	-0.6	-1.8	-0.1	-2.3	0.0	-0.9	-1.2	-1.4	-1.9	-2.8
+516	-0.3	-2.1	0.3	-2.6	0.6	-1.8	-1.1	-2.0	-2.8	-2.0
+517	0.4	-1.0	0.4	-2.2	-0.3	1.1	-0.4	-1.6	-3.0	-2.0
+518	-1.4	-1.8	0.0	-2.8	0.3	0.9	-0.9	-1.5	-2.8	-2.4
+519	0.8	-3.1	-0.1	-1.3	1.9	-1.1	0.8	-1.7	-1.2	-3.4
+520	-1.6	-2.1	0.3	-1.5		-0.1	-0.7	-1.8	-2.6	-2.4
+521	-1.7	-2.1	-1.1	-2.7		-1.9	-1.0	-1.2	-2.9	-2.3
+522	-1.9	-2.2	0.6	-3.0	0.0	1.1	-0.6	-0.6	-4.2	-2.7
+523	-1.4	-2.7	0.8	-2.1	0.3	0.7	-1.7	-1.8	-3.4	-2.0
+524	0.0	-2.8	1.0	-2.0	1.4	0.1	0.0	-1.3	-2.8	-1.9
+525	-0.9	-2.6	0.0	-1.7	0.1	-2.0	-0.4	-2.1	-3.5	-3.4
+526	-1.6	-1.9	0.4	-2.3	-0.7	0.0		-1.1	-2.4	-2.9
+527	-0.9	-2.0	1.5	-1.6	1.3	0.5	-0.1	-1.7	-2.7	-2.7
+528	-1.5	-1.8	-0.3	-1.8	-0.9	-0.6	-0.8	-1.6	-3.0	-2.5
+529										
+530										
+531										
+532										
+533										
+534										
+535	1.1	-0.3	0.8	-1.4	2.1	1.3	0.9	-0.7	-0.4	0.0
+536	-0.7	-0.8	-1.8	-1.5	-0.3	2.9	1.4	-1.6	-1.8	-1.1
+537	4.7	-2.3	1.7	-3.6	12.1	-6.5	-0.9	4.7	3.4	-3.8
+538	1.0	-0.2	1.1	-1.2	2.2	1.6	1.0	-0.2	-0.1	0.2
+539	-1.3	-1.8	-1.9	-2.1	1.2	0.7	-0.5	-0.8	-2.2	-3.7
+540	4.3	-2.3	0.9	-2.3	1.5	-1.1	-0.6	-0.3	-0.9	-3.8
+541	1.5	-2.1	1.1	-2.3	2.7	-0.2	0.2	-0.3	-0.2	-2.2
+542	1.0	0.1	-0.6	-0.6	0.9	2.5	1.6	-0.8	-1.1	-0.3
+543										
+544	-2.9	-3.0	-3.8	-3.8					-1.8	
+545										
+546	-3.6	-3.6	-2.6	-0.9				-1.1	-2.1	-3.4
+547	-0.8	-1.6	-1.4	-1.3	0.5	1.5	0.0	-0.7	-1.8	-2.5
+548	-0.7	-2.1	-0.4	-1.2	0.9	1.4	1.4	-1.6	-1.4	-1.4
+549	-0.8	-2.3	-1.4	-1.3	0.6	0.8	-0.7	-2.1	-1.9	-2.3
+550	-0.9	-2.2	-2.2	-0.9	1.1	0.6	0.7	-0.9	-1.0	-2.4
+551	-0.7	-1.9	-1.0	-0.7	1.6	0.4	1.2	-0.8	-0.3	-2.5
+552	-1.1	-1.6	0.2	-1.4	0.2	2.1	1.1	-1.0	-0.7	-2.3
+553	-1.3	-1.6	-4.0	-1.6	0.2	0.6	-0.7	-2.2	-1.7	-3.8
+554	-1.9	-1.6	-3.8	-1.6	-1.3	-2.3	-2.4	-0.2	-1.6	-3.1
+555	-1.4	-1.6	-2.3	-0.9	-0.4	2.0	1.3	-1.7	-1.9	-2.2
+556	0.1	-1.7	0.0	-1.8	1.1	0.1	0.5	-1.1	0.4	-2.4
+557	-0.4	-0.8	-2.4	-1.5		-0.1	-0.1		-1.0	
+558	-1.1	-2.3	-3.2	-1.7	0.2	1.4	2.1	-2.0	0.0	-0.9
+559	-2.6	-1.0	-2.9	-1.4	0.5	1.1	1.5	-1.1	-0.7	-2.4
+560	-1.1	-1.2	-2.1	-2.5	0.3			-1.2	-1.7	-2.9
+561	-0.4	-1.6	-1.2	-2.1	0.2	0.5	1.3	-1.3	-0.7	-2.4
+562	-1.0	-0.4	-3.3	-1.8	0.6	-0.2	-0.9	-1.5	-0.2	-3.2
+563	-0.9	-1.1	-1.9	-1.8	-0.6	-1.7	-0.5	-0.5	-0.7	-2.3
+564	-0.8	-2.2	-2.0	-2.3	2.4	-1.0	-0.1	-1.1	-0.2	-2.3
+565	-1.1	-1.6	-3.5	-1.2	0.5	0.9	0.8	-1.7	-0.7	-2.5
+566	-1.3	-1.5	-3.7	-1.5	1.3	0.6	0.4	-1.5	-2.1	-2.8
+567	-0.8	-1.5	-2.1	-1.2	1.1	-0.3	0.4	-1.2	-1.4	-2.4
+568	-1.8	-1.1	-3.8	-1.6		-0.2		-2.4	-2.0	-2.1
+569	-1.3	-2.0	-2.0	-3.6	0.3	-0.9			-2.1	
+570	-1.3	-1.4	-2.2	-1.4	-1.5	0.0	0.0	-1.4	-1.4	-2.8
+571	-1.7	-1.1	-2.0		-0.2	1.0	2.2	-1.8	-2.1	-2.9
+572	-0.9	-1.4	-2.9	-2.4	1.2	-1.2	0.4	-1.0	-1.3	-2.6
+573	-1.6	-1.8	-1.6	-1.4		-0.2	0.6	-1.6	-1.5	-2.8
+574	-1.2	-2.5	-1.9	-1.7	1.4	-0.2	0.3	-1.0	0.1	-3.0
+575	0.8	-1.0	0.2	-1.3	3.8	1.5	0.4	0.0	1.1	-0.1
+576	-1.1	-2.3	-2.7	-1.7	0.9	-0.4	0.9	-1.1	-0.2	-1.0
+!series_matrix_table_end
