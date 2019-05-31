@@ -1,4 +1,4 @@
-SampleName	Experiment Color
+SampleName	Experiment	Color
 GSM310494 	Flocculent strain HS 10 exponential growth phase vs powdery strain HS 37 exponential growth phase	2
 GSM310495 	Flocculent strain HS 10 exponential growth phase vs powdery strain HS 37 exponential growth phase (Dye swap)	2
 GSM310496 	Flocculent strain HS 10 exponential growth phase vs powdery strain HS 12 exponential growth phase	3
