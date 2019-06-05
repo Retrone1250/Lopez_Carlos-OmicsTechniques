@@ -10,33 +10,23 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ## Introduction
-**Title:** Comparison between Saccharomyces cerevisiae HS 10, HS 34 and HS 12, HS 37
+**Title:** Gene expression profile of nickel-stimulated HUVEC
 
-**Organism:** Saccharomyces cerevisiae.
+**Organism:** Homo sapiens
 
 **Experiment type:** Expression profiling by array.
 
-**Status:** Public on Dec 12, 2008.
+**Status:** Public on Dec 31, 2006
 
 ## Summary
-Gene expression of different flocculent (HS 10 and HS 34) and powdery (HS 12 and HS 37) yeast strains compared to each other during exponential and stationary growth phase was analysed.
-
-The isolation of RNA was done by disruption of the cells under liquid nitrogen using mortar and pistil and then the Qiagen RNeasy Midi Kit with some modifications within the manufacturers´ protocol and the Qiagen RNase-Free DNase Set were applied.
-
-6 µg of the total RNA per sample was used for each microarray experiments. The indirect labelling by the tyramide-signal-amplification method (MicromaxTM TSATM labelling and detection Kit from Perkin Elmer life sciences) was used to increase the Cy3 and Cy5 signals of microarray detection.
-
-Each cDNA containing Biotin- and Fluorescein-nucleotides respectively was purified with a QIAquick PCR purification kit and suspended in 11 µl of the formamide containing hybridization buffer. The slides were hybridized at 42°C over night under a cover slip.
-
-The microarrays were scanned by the Axon 4000B scanner; image intensity data were extracted and analysed with GenePix® Pro 6.0 software.
-
-Data from different scans of Dye-swap experiment were extracted by GenePix Pro 6.0 software, normalized and united. An outliertest has been applied in order to find outliers amongst the gene replicats. Subsequently, a t-test (1% and 5% probability of error) has been used in order to find regulated genes.
-Keywords: sorted yeast cells
+Nickel compounds, important carcinogens and prime inducers of contact allergy in humans, are potent activators of endothelial cells (ECs). To elucidate the signaling pathways mediating the cellular responses to nickel we performed Affymetrix gene profiling of human primary ECs.
+Keywords: stress response
 
 ## Experimental design
-Microarray experiments were realised with dye swap.
+HUVEC cultured under standard conditions were treated for 5h with 1.5 mM NiCl2 or left untreated before total RNA isolation and processing for microarray hybridization. Four independent experiments were performed, i.e. 8 samples (Control and experiment) were analyzed.
 
 ## Citations
-  Heine F, Stahl F, Sträuber H, Wiacek C et al. Prediction of flocculation ability of brewing yeast inoculates by flow cytometry, proteome analysis, and mRNA profiling. Cytometry A 2009 Feb;75(2):140-7. PMID: 19072835
+    Viemann D, Schmidt M, Tenbrock K, Schmid S et al. The contact allergen nickel triggers a unique inflammatory and proangiogenic gene expression pattern via activation of NF-kappaB and hypoxia-inducible factor-1alpha. J Immunol 2007 Mar 1;178(5):3198-207. PMID: 17312168
 
 ## Data description
 We have two files:
@@ -46,8 +36,8 @@ We have two files:
 
 These files can be either imported manually using the Rstudio tools or using the following commands:
 ```{r}
-targets<-read.csv("targets_12369.txt",header = T, sep = "\t")
-myExpress<-as.matrix(read.table("matrix_12369.txt", header=T, sep="\t", row.names=1, as.is=T))
+targets<-read.csv("targets.txt",header = T, sep = "\t")
+myExpress<-as.matrix(read.table("expression.txt", header=T, sep="\t", row.names=1, as.is=T))
 ```
 
 ### Targets
@@ -71,19 +61,17 @@ myEset<-ExpressionSet(myExpress)
 
 The next information we have to add is the information stored in the targets.
 ```{r}
-columnDesc<-data.frame(labelDescription=c("SampleName", "Experiment", "Color"))
+columnDesc<-data.frame(labelDescription=c("SampleName", "Experiment", "Replicate", "Color"), row.names = c("SampleName", "Experiment", "Replicate", "Color"))
 myAnnotDF <- new("AnnotatedDataFrame", data=targets, varMetadata= columnDesc)
-show(myAnnotDF)
+targets
+columnDesc
+
 ```
-We create an array of the length of the total number of genes (576 in my case)
+We create an array of the length of the total number of genes (2283 in my case)
 ```{r}
-myGenes <-  paste0("gene",1:576)
+myGenes <-  paste0("gene",1:2283)
 ```
 
-We store the annotated information dataframe the following way, so that we can add it to the expression set.
-```{r}
-phenoData(myEset)<-myAnnotDF
-```
 
 ```{r}
 rownames(pData(myAnnotDF))<-pData(myAnnotDF)$SampleName
@@ -92,7 +80,7 @@ myEset <- ExpressionSet(assayData=myExpress, phenoData=myAnnotDF)
 
 We finally add the array of genes to the expression set:
 ```{r}
-myEset <- ExpressionSet(assayData=myExpress,phenoData=myAnnotDF,featureNames =myGenes)
+myEset <- ExpressionSet(assayData=myExpress,featureNames =myGenes)
 show(myEset)
 ```
 
