@@ -1,0 +1,48 @@
+---
+title: "MA-Analisis"
+author: "Carlos López Elorduy"
+date: "6/9/2019"
+output: html_document
+---
+```{r}
+workingDir <-getwd()
+dataDir <- file.path(workingDir, "dades")
+resultsDir <- file.path(workingDir, "results")
+setwd(resultsDir)
+```
+
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+if (!require(BiocManager)) install.packages("BiocManager")
+
+installifnot <- function (pkg){
+  if (!require(pkg, character.only=T)){
+    BiocManager::install(pkg)
+}else{
+  require(pkg, character.only=T)
+  }
+}
+
+installifnot("pd.mogene.1.0.st.v1")
+installifnot("mogene10sttranscriptcluster.db")
+installifnot("oligo")
+installifnot("limma")
+installifnot("Biobase")
+installifnot("arrayQualityMetrics")
+installifnot("genefilter")
+installifnot("multtest")
+installifnot("annotate")
+installifnot("xtable")
+installifnot("gplots")
+installifnot("scatterplot3d")
+
+
+
+
+
+
+

@@ -36,8 +36,8 @@ We have two files:
 
 These files can be either imported manually using the Rstudio tools or using the following commands:
 ```{r}
-targets<-read.csv("targets.txt",header = T, sep = "\t")
-myExpress<-as.matrix(read.table("expression.txt", header=T, sep="\t", row.names=1, as.is=T))
+targets<-read.csv("Exercise_1/targets.txt",header = T, sep = "\t")
+myExpress<-as.matrix(read.table("Exercise_1/expression.txt", header=T, sep="\t", row.names=1, as.is=T))
 ```
 
 ### Targets
