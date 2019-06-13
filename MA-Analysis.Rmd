@@ -15,7 +15,7 @@ setwd(resultsDir)
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-```{r}
+
 if (!require(BiocManager)) install.packages("BiocManager")
 
 installifnot <- function (pkg){
@@ -38,7 +38,7 @@ installifnot("annotate")
 installifnot("xtable")
 installifnot("gplots")
 installifnot("scatterplot3d")
-```
+
 
 
 
@@ -58,6 +58,10 @@ targets
 ```{r}
 require(GEOquery)
 gse<-getGEO("GSE4852")
+
+#getGEOSuppFiles("GSE4852")
+#list.files("GSE4852")
+
 set<-gse[[1]]
 rawData<-set
 ```
