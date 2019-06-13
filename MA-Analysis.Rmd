@@ -237,7 +237,7 @@ print(eset_filtered$eset)
 
 #CONTRAST MATRIX.lINEAR MODEL
 ```{r}
-treat <- targets$grupos
+treat <- targets$Experiment
 lev <- factor(treat, levels = unique(treat))
 design <-model.matrix(~0+lev)
 colnames(design) <- levels(lev)
@@ -250,7 +250,7 @@ print(design)
 #COMPARISON
 ```{r}
 cont.matrix1 <- makeContrasts( 
-        Induced.vs.WT = Induced-WT,
+        Control.vs.Nickel = HUVEC_control_experiment-HUVEC_nickel_experiment,
         levels = design)
 comparison1 <- "Effect of Induction"
 ```
