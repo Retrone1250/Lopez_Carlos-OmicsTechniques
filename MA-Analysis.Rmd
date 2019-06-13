@@ -136,7 +136,8 @@ dev.off()
 ###DATA NORMALIZATION
 #---------------------------------------------------------------------------------------------
 ```{r}
-eset<-rma(rawData)
+#rawData already normalized
+eset<-rawData
 
 write.exprs(eset, file.path(resultsDir, "NormData.txt"))
 ```
