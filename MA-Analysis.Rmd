@@ -272,7 +272,7 @@ fit.main1 <- eBayes(fit.main1)
 
 #FILTER BY FALSE DISCOVERY RATE AND FOLD CHANGE
 ```{r}
-topTab <-  topTable (fit.main1, number=nrow(fit.main1), coef="Induced.vs.WT", adjust="fdr",lfc=abs(3))
+topTab <-  topTable (fit.main1, number=nrow(fit.main1), coef="Control.vs.Nickel", adjust="fdr",lfc=abs(3))
 ```
 
 
@@ -281,7 +281,7 @@ topTab <-  topTable (fit.main1, number=nrow(fit.main1), coef="Induced.vs.WT", ad
 ```{r}
 write.csv2(topTab, file= file.path(resultsDir,paste("Selected.Genes.in.comparison.",
                                                     comparison1, ".csv", sep = "")))
-print(xtable(topTab,align="lllllll"),type="html",html.table.attributes="",
+print(xtable(topTab,align="lllllllllllllllllllllll"),type="html",html.table.attributes="",
       file=paste("Selected.Genes.in.comparison.",comparison1,".html", sep=""))
 
 ```
@@ -322,7 +322,6 @@ head(HMdata)
 HMdata2 <- data.matrix(HMdata, rownames.force=TRUE)
 head(HMdata2)
 write.csv2(HMdata2, file = file.path(resultsDir,"Data2HM.csv"))
-
 ```
 
 #HEATMAP PLOT
@@ -332,7 +331,7 @@ my_palette <- colorRampPalette(c("blue", "red"))(n = 299)
 heatmap.2(HMdata2,
           Rowv=TRUE,
           Colv=TRUE,
-          main="HeatMap Induced.vs.WT FC>=3",
+          main="HeatMap Control.vs.Nickel FC>=3",
           scale="row",
           col=my_palette,
           sepcolor="white",
