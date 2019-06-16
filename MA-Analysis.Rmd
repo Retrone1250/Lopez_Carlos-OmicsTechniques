@@ -10,10 +10,10 @@ dataDir <- file.path(workingDir, "dades")
 resultsDir <- file.path(workingDir, "results")
 setwd(resultsDir)
 ```
-
+Install packages:
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
-```
+
 
 
 if (!require(BiocManager)) install.packages("BiocManager")
@@ -38,7 +38,7 @@ installifnot("annotate")
 installifnot("xtable")
 installifnot("gplots")
 installifnot("scatterplot3d")
-
+```
 
 
 
