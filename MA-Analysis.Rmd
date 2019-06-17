@@ -42,32 +42,31 @@ installifnot("scatterplot3d")
 
 
 
-#---------------------------------------------------------------------------------------------
-###LOAD DATA: TARGETS AND CEL FILES. 
-#---------------------------------------------------------------------------------------------
+# ---------------------------------------------------------------------------------------------
 
-#TARGETS
+## LOAD DATA: TARGETS AND CEL FILES. 
+
+# ---------------------------------------------------------------------------------------------
+
+### TARGETS
 
 ```{r}
 targets <-read.csv(file=file.path(dataDir,"targets.txt"), header = TRUE, sep="\t") 
 targets
 ```
 
-#CELFILES
+### CELFILES
 
 ```{r}
 require(GEOquery)
 gse<-getGEO("GSE4852")
-
-#getGEOSuppFiles("GSE4852")
-#list.files("GSE4852")
 
 set<-gse[[1]]
 rawData<-set
 ```
 
 
-#DEFINE SOME VARIABLES FOR PLOTS
+### DEFINE SOME VARIABLES FOR PLOTS
 
 ```{r}
 sampleNames <- as.character(targets$ShortName)
@@ -75,19 +74,21 @@ sampleColor <- as.character(targets$Color)
 ```
 
 
-#---------------------------------------------------------------------------------------------
-###QUALITY CONTROL OF ARRAYS: RAW DATA
-#---------------------------------------------------------------------------------------------
+# ---------------------------------------------------------------------------------------------
+
+## QUALITY CONTROL OF ARRAYS: RAW DATA
+
+# ---------------------------------------------------------------------------------------------
 
 
-#BOXPLOT
+### BOXPLOT
 
 ```{r}
 boxplot(rawData, which="all",las=2, main="Intensity distribution of RAW data", 
         cex.axis=0.6, col=sampleColor, names=sampleNames)
 ```
 
-#HIERARQUICAL CLUSTERING
+### HIERARQUICAL CLUSTERING
 ```{r}
 clust.euclid.average <- hclust(dist(t(exprs(rawData))),method="average")
 plot(clust.euclid.average, labels=sampleNames, main="Hierarchical clustering of RawData", 
@@ -96,7 +97,7 @@ plot(clust.euclid.average, labels=sampleNames, main="Hierarchical clustering of 
 
 
 
-#PRINCIPAL COMPONENT ANALYSIS
+### PRINCIPAL COMPONENT ANALYSIS
 ```{r}
 plotPCA <- function ( X, labels=NULL, colors=NULL, dataDesc="", scale=FALSE, formapunts=NULL, myCex=0.8,...)
 {
@@ -117,7 +118,7 @@ plotPCA(exprs(rawData), labels=sampleNames, dataDesc="raw data", colors=sampleCo
 
 
 
-#SAVE TO A FILE
+### SAVE TO A FILE
 ```{r}
 pdf(file.path(resultsDir, "QCPlots_Raw.pdf"))
 boxplot(rawData, which="all",las=2, main="Intensity distribution of RAW data", 
@@ -132,9 +133,11 @@ dev.off()
 
 
 
-#---------------------------------------------------------------------------------------------
-###DATA NORMALIZATION
-#---------------------------------------------------------------------------------------------
+# ---------------------------------------------------------------------------------------------
+
+## DATA NORMALIZATION
+
+# ---------------------------------------------------------------------------------------------
 ```{r}
 #rawData already normalized
 eset<-rawData
@@ -145,17 +148,19 @@ write.exprs(eset, file.path(resultsDir, "NormData.txt"))
 
 
 
-#---------------------------------------------------------------------------------------------
-###QUALITY CONTROL OF ARRAYS: NORMALIZED DATA
-#---------------------------------------------------------------------------------------------
+# ---------------------------------------------------------------------------------------------
 
-#BOXPLOT
+## QUALITY CONTROL OF ARRAYS: NORMALIZED DATA
+
+# ---------------------------------------------------------------------------------------------
+
+### BOXPLOT
 ```{r}
 boxplot(eset, las=2, main="Intensity distribution of Normalized data", cex.axis=0.6, 
         col=sampleColor, names=sampleNames)
 ```
 
-#HIERARQUICAL CLUSTERING
+### HIERARQUICAL CLUSTERING
 ```{r}
 clust.euclid.average <- hclust(dist(t(exprs(eset))),method="average")
 plot(clust.euclid.average, labels=sampleNames, main="Hierarchical clustering of NormData", 
@@ -163,7 +168,7 @@ plot(clust.euclid.average, labels=sampleNames, main="Hierarchical clustering of 
 ```
 
 
-#PRINCIPAL COMPONENT ANALYSIS
+### PRINCIPAL COMPONENT ANALYSIS
 ```{r}
 plotPCA <- function ( X, labels=NULL, colors=NULL, dataDesc="", scale=FALSE, formapunts=NULL, myCex=0.8,...)
 {
@@ -184,7 +189,7 @@ plotPCA(exprs(eset), labels=sampleNames, dataDesc="NormData", colors=sampleColor
 
 
 
-#SAVE TO A FILE
+### SAVE TO A FILE
 ```{r}
 pdf(file.path(resultsDir, "QCPlots_Norm.pdf"))
 boxplot(eset, las=2, main="Intensity distribution of Normalized data", cex.axis=0.6, 
@@ -198,16 +203,17 @@ dev.off()
 
 
 
-#ARRAY QUALITY METRICS
+### ARRAY QUALITY METRICS
 
 ```{r}
 arrayQualityMetrics(eset,  reporttitle="QualityControl", force=TRUE)
 ```
 
 
-#---------------------------------------------------------------------------------------------
-###FILTER OUT THE DATA
-#---------------------------------------------------------------------------------------------
+# ---------------------------------------------------------------------------------------------
+
+## FILTER OUT THE DATA
+# ---------------------------------------------------------------------------------------------
 ```{r}
 annotation(eset) <- "org.Mm.eg.db"
 eset_filtered <- nsFilter(eset, var.func=IQR,
@@ -216,14 +222,14 @@ eset_filtered <- nsFilter(eset, var.func=IQR,
 ```
 
 
-#NUMBER OF GENES OUT
+### NUMBER OF GENES OUT
 ```{r}
 print(eset_filtered$filter.log$numLowVar)
 ```
 
 
 
-#NUMBER OF GENES IN
+### NUMBER OF GENES IN
 ```{r}
 print(eset_filtered$eset)
 ```
@@ -231,11 +237,13 @@ print(eset_filtered$eset)
 
 
 
-#---------------------------------------------------------------------------------------------
-###DIFERENTIAL EXPRESSED GENES SELECTION. LINEAR MODELS. COMPARITIONS
-#---------------------------------------------------------------------------------------------
+# ---------------------------------------------------------------------------------------------
 
-#CONTRAST MATRIX.lINEAR MODEL
+## DIFERENTIAL EXPRESSED GENES SELECTION. LINEAR MODELS. COMPARITIONS
+
+# ---------------------------------------------------------------------------------------------
+
+### CONTRAST MATRIX.lINEAR MODEL
 ```{r}
 treat <- targets$Experiment
 lev <- factor(treat, levels = unique(treat))
@@ -247,7 +255,7 @@ print(design)
 
 
 
-#COMPARISON
+### COMPARISON
 ```{r}
 cont.matrix1 <- makeContrasts( 
         Control.vs.Nickel = HUVEC_control_experiment-HUVEC_nickel_experiment,
@@ -256,7 +264,7 @@ comparison1 <- "Effect of Induction"
 ```
 
 
-#MODEL FIT
+### MODEL FIT
 ```{r}
 fit1 <- lmFit(eset_filtered$eset, design)
 fit.main1 <- contrasts.fit(fit1, cont.matrix1)
@@ -266,18 +274,20 @@ fit.main1 <- eBayes(fit.main1)
 
 
 
-#---------------------------------------------------------------------------------------------
-###DIFERENTIAL EXPRESSED GENES LISTS.TOPTABLES
-#---------------------------------------------------------------------------------------------
+# ---------------------------------------------------------------------------------------------
 
-#FILTER BY FALSE DISCOVERY RATE AND FOLD CHANGE
+## DIFERENTIAL EXPRESSED GENES LISTS.TOPTABLES
+
+# ---------------------------------------------------------------------------------------------
+
+### FILTER BY FALSE DISCOVERY RATE AND FOLD CHANGE
 ```{r}
 topTab <-  topTable (fit.main1, number=nrow(fit.main1), coef="Control.vs.Nickel", adjust="fdr",lfc=abs(3))
 ```
 
 
 
-#EXPORTED TO CSV AND HTML FILE
+### EXPORTED TO CSV AND HTML FILE
 ```{r}
 write.csv2(topTab, file= file.path(resultsDir,paste("Selected.Genes.in.comparison.",
                                                     comparison1, ".csv", sep = "")))
@@ -288,9 +298,11 @@ print(xtable(topTab,align="lllllllllllllllllllllll"),type="html",html.table.attr
 
 
 
-#---------------------------------------------------------------------------------------------
-###VOLCANO PLOTS
-#---------------------------------------------------------------------------------------------
+# ---------------------------------------------------------------------------------------------
+
+## VOLCANO PLOTS
+
+# ---------------------------------------------------------------------------------------------
 ```{r}
 
 volcanoplot(fit.main1, highlight=10, names=fit.main1$ID, 
@@ -307,73 +319,11 @@ dev.off()
 ```
 
 
-#---------------------------------------------------------------------------------------------
-###HEATMAP PLOTS
-#---------------------------------------------------------------------------------------------
+# ---------------------------------------------------------------------------------------------
 
-#PREPARE THE DATA
-```{r}
-my_frame <- data.frame(exprs(eset))
-head(my_frame)
-HMdata <- merge(my_frame, topTab, by.x = 0, by.y = 0)
-rownames(HMdata) <- HMdata$Row.names
-HMdata <- HMdata[, -c(1,10:15)]
-head(HMdata)
-HMdata2 <- data.matrix(HMdata, rownames.force=TRUE)
-head(HMdata2)
-write.csv2(HMdata2, file = file.path(resultsDir,"Data2HM.csv"))
-```
+## DATA ANNOTATION
 
-#HEATMAP PLOT
-```{r}
-my_palette <- colorRampPalette(c("blue", "red"))(n = 299)
-
-heatmap.2(HMdata2,
-          Rowv=TRUE,
-          Colv=TRUE,
-          main="HeatMap Control.vs.Nickel FC>=3",
-          scale="row",
-          col=my_palette,
-          sepcolor="white",
-          sepwidth=c(0.05,0.05),
-          cexRow=0.5,
-          cexCol=0.9,
-          key=TRUE,
-          keysize=1.5,
-          density.info="histogram",
-          ColSideColors=c(rep("red",4),rep("blue",4)),
-          tracecol=NULL,
-          srtCol=30)
-```
-
-
-#EXPORT TO PDF FILE
-```{r}
-
-pdf(file.path(resultsDir,"HeatMap InducedvsWT.pdf"))
-heatmap.2(HMdata2,
-          Rowv=TRUE,
-          Colv=TRUE,
-          main="HeatMap Induced.vs.WT FC>=3",
-          scale="row",
-          col=my_palette,
-          sepcolor="white",
-          sepwidth=c(0.05,0.05),
-          cexRow=0.5,
-          cexCol=0.9,
-          key=TRUE,
-          keysize=1.5,
-          density.info="histogram",
-          ColSideColors=c(rep("red",4),rep("blue",4)),
-          tracecol=NULL,
-          srtCol=30)
-dev.off()
-```
-
-
-#---------------------------------------------------------------------------------------------
-###DATA ANNOTATION
-#---------------------------------------------------------------------------------------------
+# ---------------------------------------------------------------------------------------------
 ```{r}
 
 all_anota<-data.frame(exprs(eset))
@@ -390,21 +340,11 @@ write.table(anotaGenes, file ="data.ann.txt",sep="\t")
 rownames(anotaGenes) <- anotaGenes[,1]
 anotaGenes <- anotaGenes[,-1]
 anotaGenes.end <- merge(anotaGenes, topTab, by.x=0,by.y=0)
-#reordenamos las columnas
+
 topTab.end <- anotaGenes.end[,c(1:3,12:17,4:11)]
-topTab.end <- topTab.end[order(-topTab.end$B),]
 
 rownames(topTab.end) <- topTab.end[,1]
 topTab.end <- topTab.end[, -1]
 write.csv(topTab.end, file = file.path(resultsDir,"TopTable.end.csv"))
 ```
-
-
-#---------------------------------------------------------------------------------------------
-#END OF SCRIPT
-#---------------------------------------------------------------------------------------------
-
-
-
-
 
